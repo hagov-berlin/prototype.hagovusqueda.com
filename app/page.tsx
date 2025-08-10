@@ -1,9 +1,9 @@
 "use client";
 
 import { FormEvent, useRef, useState } from "react";
-import styles from "./page.module.css";
 import { Result } from "@/data/types";
 import search from "@/data/search";
+import styles from "./page.module.css";
 
 export default function Home() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -19,14 +19,14 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>Archivo Hagovero</h1>
-        <form onSubmit={onSubmit}>
-          <p>
-            <label>Buscar en el Archivo Hagovero</label>
-          </p>
-          <input type="text" ref={inputRef} />
+      <header className={styles.header}>
+        <h1 className={styles.title}>HagoVusqueda</h1>
+        <form className={styles.form} onSubmit={onSubmit}>
+          <h2 className={styles.subtitle}>Buscar en el Archivo Hagovero</h2>
+          <input type="text" ref={inputRef} className={styles.input} />
         </form>
+      </header>
+      <main className={styles.main}>
         <div>
           <h2>
             {results.length
