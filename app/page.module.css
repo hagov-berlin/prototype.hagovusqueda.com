@@ -22,22 +22,6 @@
   font-family: var(--font-germania-one);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.subtitle {
-  font-size: 40px;
-  text-align: justify;
-}
-
-.input {
-  width: 100%;
-  font-size: 32px;
-}
-
 .main {
   width: 100%;
   max-width: 800px;
