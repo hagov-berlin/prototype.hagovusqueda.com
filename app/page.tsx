@@ -5,7 +5,8 @@ import { Result } from "@/data/types";
 import search from "@/data/search";
 import styles from "./page.module.css";
 import Form from "@/components/form";
-import Results from "@/components/results";
+import ResultsContainer from "@/components/results-container";
+import FAQs from "@/components/faqs";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,8 +29,11 @@ export default function Home() {
         <Form onSubmit={onSubmit} loading={loading} />
       </header>
       <main className={styles.main}>
-        <Results searchTerm={searchTerm} loading={loading} results={results} />
+        <ResultsContainer searchTerm={searchTerm} loading={loading} results={results} />
       </main>
+      <footer className={styles.footer}>
+        <FAQs />
+      </footer>
     </div>
   );
 }

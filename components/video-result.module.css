@@ -1,0 +1,13 @@
+.videoResult {
+  padding-bottom: 32px;
+  border-bottom: solid 1px #888;
+  margin-bottom: 32px;
+}
+
+.videoResultTitle {
+  display: inline;
+}
+
+.videoResultsSubtitles {
+  padding: 16px;
+}
