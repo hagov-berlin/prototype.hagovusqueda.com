@@ -3,10 +3,11 @@ export type VideoId = string;
 
 export type Video = {
   videoId: VideoId;
+  duration: string;
   subtitles: Subtitle[];
   title: string;
   date: string;
-  show: string;
+  show: "EO" | "DI" | "HYF" | "HAA" | "ESPECIAL" | "CS" | "SCDY" | "EEC" | "BG";
 };
 
 // Diff is only conceptual.

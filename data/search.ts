@@ -1,14 +1,15 @@
 "use server";
 
 /* eslint-disable @typescript-eslint/no-require-imports */
-import { Subtitle, VideoId, Video, Result } from "./types";
-import videosJson from "./videos.json";
+import { Video, Result } from "./types";
+import { videoList } from "./video-list";
 
-const videos: Video[] = videosJson.map((video) => ({
-  ...video,
-  videoId: video.id,
-  subtitles: require(`./subtitles_json/${video.id}.json`),
-}));
+const videos: Video[] = videoList
+  .filter((video) => video.show === "HAA")
+  .map((video) => ({
+    ...video,
+    subtitles: require(`./subtitles_json/${video.videoId}.json`),
+  }));
 
 export default async function search(searchTerm: string): Promise<Result[]> {
   const searchRegex = new RegExp(searchTerm, "i");

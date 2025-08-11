@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "data": "ts-node data/download-data"
+    "data": "ts-node ./data/download-data"
   },
   "dependencies": {
+    "json-stringify-pretty-compact": "^4.0.0",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0"
