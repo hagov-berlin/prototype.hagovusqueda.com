@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Germania_One } from "next/font/google";
+import { Geist, Geist_Mono, Germania_One } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,9 +7,15 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Germania_One({
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const germaniaOne = Germania_One({
   variable: "--font-germania-one",
   weight: "400",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${germaniaOne.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

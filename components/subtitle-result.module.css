@@ -1,5 +1,56 @@
+.subtitleMatch {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.subtitleMatch:not(.subtitleMatchExpanded):hover {
+  border-color: #888;
+}
+
+.subtitleMatchExpanded {
+  cursor: default;
+}
+
+.subtitleMatchHeaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.subtitleMatchHeader {
+  margin-right: auto;
+}
+
+.subtitleTime {
+  font-family: var(--font-geist-mono);
+  margin-right: 1em;
+}
+
+.subtitleText {
+  font-style: italic;
+}
+
+.subtitleText:before {
+  content: '" ... ';
+}
+
+.subtitleText:after {
+  content: ' ... "';
+}
+
+.subtitleButton {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
 .resultIframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  border-radius: 8px;
 }

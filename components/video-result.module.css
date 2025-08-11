@@ -1,13 +1,11 @@
 .videoResult {
-  padding-bottom: 32px;
-  border-bottom: solid 1px #888;
-  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 64px;
+  border-bottom: solid 1px #aaa;
 }
 
 .videoResultTitle {
   display: inline;
-}
-
-.videoResultsSubtitles {
-  padding: 16px;
 }

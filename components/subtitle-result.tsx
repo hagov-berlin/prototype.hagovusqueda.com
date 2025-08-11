@@ -27,7 +27,7 @@ function YoutubeIframe(props: YoutubeIframeProps) {
       className={styles.resultIframe}
       width="640"
       height="360"
-      src={`http://www.youtube.com/embed/${props.videoId}?start=${props.start}`}
+      src={`http://www.youtube.com/embed/${props.videoId}?start=${props.start}&autoplay=1`}
       frameBorder="0"
     ></iframe>
   );
@@ -42,13 +42,16 @@ export function SubtitleResult(props: SubtitleProps) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className={`${styles.subtitleMatch} ${expanded ? styles.subtitleMatchExpanded : ""}`}>
-      <div>
-        <div>
-          <span>{secondsToTime(props.subtitle[1])}</span>
-          {props.subtitle[0]}
+    <div
+      className={`${styles.subtitleMatch} ${expanded ? styles.subtitleMatchExpanded : ""}`}
+      onClick={expanded ? undefined : () => setExpanded(true)}
+    >
+      <div className={styles.subtitleMatchHeaderContainer}>
+        <div className={styles.subtitleMatchHeader}>
+          <span className={styles.subtitleTime}>{secondsToTime(props.subtitle[1])}</span>
+          <span className={styles.subtitleText}>{props.subtitle[0]}</span>
         </div>
-        <button onClick={() => setExpanded(true)}>Ver</button>
+        {expanded ? null : <button className={styles.subtitleButton}>Ver</button>}
       </div>
       {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle[1]} />}
     </div>
