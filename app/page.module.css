@@ -8,12 +8,19 @@
 }
 
 .header {
-  background: #133;
+  --header-background: #aaa;
+  background: var(--header-background);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
   padding: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    --header-background: #133;
+  }
 }
 
 .title {
