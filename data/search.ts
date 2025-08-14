@@ -1,19 +1,20 @@
 "use server";
 
+import { HagovSearchParams } from "@/components/utils";
 /* eslint-disable @typescript-eslint/no-require-imports */
 import { Video, Result } from "./types";
 import { videoList } from "./video-list";
 
-const videos: Video[] = videoList
-  .filter((video) => video.show === "HAA")
-  .map((video) => ({
-    ...video,
-    subtitles: require(`./subtitles_json/${video.videoId}.json`),
-  }));
-
-export default async function search(searchTerm: string): Promise<Result[]> {
-  const searchRegex = new RegExp(searchTerm, "i");
+export default async function search(params: HagovSearchParams): Promise<Result[]> {
+  const searchRegex = new RegExp(params.searchTerm, "i");
   const results: Result[] = [];
+
+  const videos: Video[] = videoList
+    .filter((video) => video.show === (params.show || "HAA"))
+    .map((video) => ({
+      ...video,
+      subtitles: require(`./subtitles_json/${video.videoId}.json`),
+    }));
 
   for (const video of videos) {
     const matches = video.subtitles.filter((subtitle, index) => {
