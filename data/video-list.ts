@@ -2,6 +2,95 @@ import type { Video } from "./types.ts";
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {
+    videoId: "-9GncUvmT6E",
+    title: "MIÉRCOLES de HACKERS, DEEP WEB y CHAT GPT vs GOOGLE | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "1:59:54",
+    date: "2025-08-13",
+  },
+  {
+    videoId: "l01NzTNru-k",
+    title:
+      "JORGE a la MODA, JUEGOS de MESA y la FILTRACIÓN de TAYLOR SWIFT | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:51:53",
+    date: "2025-08-13",
+  },
+  {
+    videoId: "OBpm4MqIP_M",
+    title: "QUIERO SER FORENSE, LABUROS de SUPERHEROES y TERAPIA PARA JANE | ESCUCHO OFERTAS",
+    show: "EO",
+    duration: "2:20:04",
+    date: "2025-08-13",
+  },
+  {
+    videoId: "dlJQY5yWBdM",
+    title: "OTRA CENA de HÉROES, ESP3RMA FLOJO y JUGUETES TURBIOS | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:02:30",
+    date: "2025-08-13",
+  },
+  {
+    videoId: "13frX7_TDT4",
+    title:
+      "MARTES de CONFLICTOS INTERNACIONALES, los VIAJES de MILEI y la BOLETA ÚNICA | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "1:58:29",
+    date: "2025-08-12",
+  },
+  {
+    videoId: "ApH0nbBkdXE",
+    title: "PROVOCAMOS a JORGE, LAMOTHE en la MONTAÑA y NOTIFIOS | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:49:30",
+    date: "2025-08-12",
+  },
+  {
+    videoId: "DqSxe7rynXY",
+    title: "GANNIO AMA a BULLRICH, la CRISIS de JUANITA y se CIERRAN las LISTAS | ESCUCHO OFERTAS",
+    show: "EO",
+    duration: "2:19:13",
+    date: "2025-08-12",
+  },
+  {
+    videoId: "Co819_AJJro",
+    title:
+      "DUKA vs MANU JOVE, MILEI pide LIBERTAD DE EXPERSIÓN y el CEREBRO ENAMORADO | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:03:28",
+    date: "2025-08-12",
+  },
+  {
+    videoId: "drM6djq3U-M",
+    title: "EDIBORDIAL SORPRESA de JUAN GRABOIS y BOOTLEGS ARGENTOS | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "2:02:34",
+    date: "2025-08-11",
+  },
+  {
+    videoId: "AgQWePKGtH0",
+    title: "La SOLE y LARGUIRUCHO, DIVAS POP | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:50:05",
+    date: "2025-08-11",
+  },
+  {
+    videoId: "dLc_zWeon60",
+    title:
+      "NOTI FEDERAL VS NOTI PALERMO, GANNIO INVESTIGA y REPERCUSIONES del CUMPLE de JANE | ESCUCHO OFERTAS",
+    show: "EO",
+    duration: "2:25:47",
+    date: "2025-08-11",
+  },
+  {
+    videoId: "uUGcXm6Qf-A",
+    title:
+      "ADIOS al STREAM del CONICET, EMERGENCIA en DISCAPACIDAD y la CADENA NACIONAL | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:00:37",
+    date: "2025-08-11",
+  },
+  {
     videoId: "JJLxb0sy2gU",
     title: "HAY UN CUERPO en BLENDER, CANCIÓN para ANACLETA y TERAPIA de GRUPO | ESCUCHO OFERTAS",
     show: "EO",
