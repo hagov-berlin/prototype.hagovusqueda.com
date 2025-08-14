@@ -9,7 +9,33 @@
   text-align: justify;
 }
 
+.mainForm {
+  display: flex;
+}
+
+.inputContainer {
+  position: relative;
+  flex-grow: 1;
+}
+
+.searchIcon {
+  position: absolute;
+  width: 26px;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
 .input {
   width: 100%;
   font-size: 32px;
+  padding-left: 50px;
+  border-radius: 4px;
+  border: solid 1px;
+}
+
+.submitButton {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0 8px;
 }

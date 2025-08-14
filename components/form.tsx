@@ -25,13 +25,21 @@ export default function Form(props: FormProps) {
   return (
     <form className={styles.form} onSubmit={onSubmit}>
       <h2 className={styles.subtitle}>Buscar en el Archivo Hagovero</h2>
-      <input
-        type="text"
-        ref={inputRef}
-        className={styles.input}
-        disabled={props.loading}
-        defaultValue={searchParams.get("q") || undefined}
-      />
+      <div className={styles.mainForm}>
+        <div className={styles.inputContainer}>
+          <img className={styles.searchIcon} src="/search.png" />
+          <input
+            type="text"
+            ref={inputRef}
+            className={styles.input}
+            disabled={props.loading}
+            defaultValue={searchParams.get("q") || undefined}
+          />
+        </div>
+        <button className={styles.submitButton} type="submit">
+          Buscar
+        </button>
+      </div>
     </form>
   );
 }
