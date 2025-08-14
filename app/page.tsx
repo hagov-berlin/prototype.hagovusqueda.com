@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 
 import { Result } from "@/data/types";
 import search from "@/data/search";
@@ -11,7 +11,7 @@ import { useHagovSearchParams } from "@/components/hooks";
 
 import styles from "./page.module.css";
 
-export default function Home() {
+function Page() {
   const params = useHagovSearchParams();
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<Result[]>([]);
@@ -41,5 +41,13 @@ export default function Home() {
         <FAQs />
       </footer>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense>
+      <Page />
+    </Suspense>
   );
 }
