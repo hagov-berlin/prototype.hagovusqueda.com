@@ -15,6 +15,10 @@
   align-items: center;
   gap: 64px;
   padding: 64px;
+
+  @media (max-width: 768px) {
+    padding: 32px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

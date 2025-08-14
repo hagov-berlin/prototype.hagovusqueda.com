@@ -7,10 +7,19 @@
 .subtitle {
   font-size: 40px;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .mainForm {
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .inputContainer {
@@ -38,4 +47,5 @@
   font-size: 28px;
   cursor: pointer;
   padding: 0 8px;
+  height: 40px;
 }
