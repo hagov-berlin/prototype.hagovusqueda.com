@@ -16,17 +16,17 @@ function Page() {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<Result[]>([]);
 
-  const { searchTerm, show } = params;
+  const { searchTerm, show, matchWholeWords } = params;
   useEffect(() => {
     if (searchTerm) {
       setLoading(true);
       setResults([]);
-      search({ searchTerm, show }).then((newResults) => {
+      search({ searchTerm, show, matchWholeWords }).then((newResults) => {
         setResults(newResults);
         setLoading(false);
       });
     }
-  }, [searchTerm, show]);
+  }, [searchTerm, show, matchWholeWords]);
 
   return (
     <div className={styles.page}>

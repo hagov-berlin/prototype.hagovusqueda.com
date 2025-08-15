@@ -1,11 +1,16 @@
+import { HagovSearchParams, isShow } from "@/data/types";
 import { useSearchParams } from "next/navigation";
-import { HagovSearchParams } from "./utils";
 
 export function useHagovSearchParams(): Partial<HagovSearchParams> {
   const searchParams = useSearchParams();
 
   const searchTerm = searchParams.get("q") || undefined;
-  const show = searchParams.get("show") || undefined;
 
-  return { searchTerm, show };
+  const showString = searchParams.get("show");
+  const show = showString && isShow(showString) ? showString : undefined;
+
+  const matchWholeWordsString = searchParams.get("matchWholeWords")?.toLowerCase();
+  const matchWholeWords = matchWholeWordsString === "false" ? false : true;
+
+  return { searchTerm, show, matchWholeWords };
 }

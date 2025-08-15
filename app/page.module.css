@@ -17,7 +17,7 @@
   padding: 64px;
 
   @media (max-width: 768px) {
-    padding: 32px;
+    padding: 24px;
   }
 }
 
@@ -41,4 +41,8 @@
   display: flex;
   padding: 32px;
   gap: 32px;
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
 }

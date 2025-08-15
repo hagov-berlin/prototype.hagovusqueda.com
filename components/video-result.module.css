@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-bottom: 64px;
-  border-bottom: solid 1px #aaa;
+
+  @media (max-width: 768px) {
+    gap: 32px;
+  }
 }
 
 .videoResultTitle {

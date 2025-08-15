@@ -1,12 +1,14 @@
-export type HagovSearchParams = {
-  searchTerm: string;
-  show?: string;
+import { HagovSearchParams } from "@/data/types";
+
+export const defaultParams: Omit<HagovSearchParams, "searchTerm"> = {
+  show: "HAA",
+  matchWholeWords: true,
 };
 
 export function urlWithQueryParams(newParams: HagovSearchParams) {
   const params = new URLSearchParams();
   params.set("q", newParams.searchTerm);
-  if (newParams.show && newParams.show !== "HAA") {
+  if (newParams.show && newParams.show !== defaultParams.show) {
     params.set("show", newParams.show);
   }
   return `${window.location.pathname}?${params.toString()}`;

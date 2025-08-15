@@ -1,7 +1,6 @@
-import { Result } from "@/data/types";
+import { HagovSearchParams, Result } from "@/data/types";
 import VideoResult from "./video-result";
 import styles from "./results-container.module.css";
-import { HagovSearchParams } from "./utils";
 
 function countSubtitles(results: Result[]) {
   const count = results.reduce((accum, result) => accum + result.subtitles.length, 0);
@@ -22,7 +21,7 @@ export default function ResultsContainer(props: ResultsContainerProps) {
   const {
     loading,
     results,
-    params: { searchTerm, show },
+    params: { searchTerm },
   } = props;
 
   if (!searchTerm) return null;
@@ -31,7 +30,7 @@ export default function ResultsContainer(props: ResultsContainerProps) {
     ? "Buscando..."
     : results.length === 0
     ? `No hay resultados para "${searchTerm}"`
-    : `${countSubtitles(results)} en ${countResults(results)} para "${searchTerm}" en ${show}`;
+    : `${countSubtitles(results)} en ${countResults(results)} para "${searchTerm}"`;
 
   return (
     <div className={styles.results}>

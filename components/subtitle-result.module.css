@@ -6,6 +6,15 @@
   border-radius: 8px;
   padding: 16px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    border: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #333;
+  }
 }
 
 .subtitleMatch:not(.subtitleMatchExpanded):hover {
@@ -19,6 +28,7 @@
 .subtitleMatchHeaderContainer {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .subtitleMatchHeader {
