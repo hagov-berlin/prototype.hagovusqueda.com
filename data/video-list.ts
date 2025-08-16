@@ -2,6 +2,37 @@ import type { Video } from "./types.ts";
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {
+    videoId: "vbLpepCLiLQ",
+    title:
+      "ESPECIAL BALAS GRATIS con MARRA, CARUSO, ANAMÁ FERREIRA y JUANCHI BALEIRON | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "",
+    date: "2025-08-14",
+  },
+  {
+    videoId: "7sFvguAIA_Q",
+    title:
+      "ITI EL HERMOSO, la POSTA de THE OFFICE y DIBUJITOS POLÍTICOS | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "",
+    date: "2025-08-14",
+  },
+  {
+    videoId: "3qsSdNarjas",
+    title: "CÓMO CONOCER GENTE, PONÉ A FRANCELLA y FINAL INESPERADO | ESCUCHO OFERTAS",
+    show: "EO",
+    duration: "",
+    date: "2025-08-14",
+  },
+  {
+    videoId: "YMnSf8kzkd8",
+    title:
+      "MASSA NO ES CANDIDATO, INFLACIÓN de JULIO y FELIZ CUMPLE QUILMES | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "1:59:39",
+    date: "2025-08-14",
+  },
+  {
     videoId: "-9GncUvmT6E",
     title: "MIÉRCOLES de HACKERS, DEEP WEB y CHAT GPT vs GOOGLE | HAY ALGO AHÍ | BLENDER",
     show: "HAA",

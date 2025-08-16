@@ -34,6 +34,7 @@ export default function Form(props: FormProps) {
             className={styles.input}
             disabled={props.loading}
             defaultValue={searchParams.get("q") || undefined}
+            placeholder='Por ej: "Morfleps"'
           />
         </div>
         <button className={styles.submitButton} type="submit">
