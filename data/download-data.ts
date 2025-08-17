@@ -62,7 +62,7 @@ async function getSubtitlesForVideo(videoId: string) {
 
 (async function main() {
   for (const video of videoList) {
-    if (!["HAA", "HYF"].includes(video.show)) continue;
+    if (!["HAA", "HYF", "SCDY"].includes(video.show)) continue;
 
     let subtitleContent = "";
     try {
