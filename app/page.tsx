@@ -13,10 +13,10 @@ import styles from "./page.module.css";
 
 function Page() {
   const params = useHagovSearchParams();
-  const [loading, setLoading] = useState(false);
+  const { searchTerm, show, matchWholeWords } = params;
+  const [loading, setLoading] = useState(!!searchTerm);
   const [results, setResults] = useState<Result[]>([]);
 
-  const { searchTerm, show, matchWholeWords } = params;
   useEffect(() => {
     if (searchTerm) {
       setLoading(true);

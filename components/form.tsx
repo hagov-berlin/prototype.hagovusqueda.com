@@ -22,6 +22,8 @@ export default function Form(props: FormProps) {
     router.push(newUrl, { scroll: false });
   };
 
+  const defaultValue = searchParams.get("q") || undefined;
+
   return (
     <form className={styles.form} onSubmit={onSubmit}>
       <h2 className={styles.subtitle}>Buscar en el Archivo Hagovero</h2>
@@ -33,7 +35,8 @@ export default function Form(props: FormProps) {
             ref={inputRef}
             className={styles.input}
             disabled={props.loading}
-            defaultValue={searchParams.get("q") || undefined}
+            defaultValue={defaultValue}
+            autoFocus={!defaultValue}
             placeholder='Por ej: "Morfleps"'
           />
         </div>
