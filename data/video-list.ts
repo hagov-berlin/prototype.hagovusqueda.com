@@ -2,11 +2,49 @@ import type { Video } from "./types.ts";
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {
+    videoId: "wsoKLxe2RK0",
+    title:
+      "EDIBORDIAL de REGRESO, FILOSOFÍAS de BARBA y LOS FLOWS de RUFFITO | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "2:03:32",
+    date: "2025-08-18",
+  },
+  {
+    videoId: "CkingaFLFOA",
+    title:
+      "SECRETOS de CÁRCELES de MUJERES, la POSTA de LA SOLE y LARGUIRUCHO | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:49:31",
+    date: "2025-08-18",
+  },
+  {
+    videoId: "iRdk7l40XxU",
+    title: "GUILLE ESTÁ EN PELIGRO, CANDIDATOS ATRACTIVOS y NOTIFEDERAL | ESCUCHO OFERTAS",
+    show: "EO",
+    duration: "2:30:19",
+    date: "2025-08-18",
+  },
+  {
+    videoId: "gChZRO-fa34",
+    title:
+      "PICANTE CIERRE de LISTAS por DIPUTADOS y MILEI LOCO con HOMO ARGENTUM | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:02:49",
+    date: "2025-08-18",
+  },
+  {
+    videoId: "Vdo2Ek985p4",
+    title: "ESPECIAL SAN MARTÍN: ¿Quién es el PRÓXIMO PRÓCER NACIONAL? | BLENDER",
+    show: "HAA",
+    duration: "2:01:43",
+    date: "2025-08-17",
+  },
+  {
     videoId: "vbLpepCLiLQ",
     title:
       "ESPECIAL BALAS GRATIS con MARRA, CARUSO, ANAMÁ FERREIRA y JUANCHI BALEIRON | HAY ALGO AHÍ | BLENDER",
     show: "HAA",
-    duration: "",
+    duration: "1:58:16",
     date: "2025-08-14",
   },
   {
@@ -14,14 +52,14 @@ export const videoList: Omit<Video, "subtitles">[] = [
     title:
       "ITI EL HERMOSO, la POSTA de THE OFFICE y DIBUJITOS POLÍTICOS | HORRIBLE Y FASCINANTE | BLENDER",
     show: "HYF",
-    duration: "",
+    duration: "1:55:37",
     date: "2025-08-14",
   },
   {
     videoId: "3qsSdNarjas",
     title: "CÓMO CONOCER GENTE, PONÉ A FRANCELLA y FINAL INESPERADO | ESCUCHO OFERTAS",
     show: "EO",
-    duration: "",
+    duration: "2:40:07",
     date: "2025-08-14",
   },
   {
