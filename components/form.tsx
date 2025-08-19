@@ -2,6 +2,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, useRef } from "react";
 import styles from "./form.module.css";
 import { urlWithQueryParams } from "./utils";
+import Button from "./button";
 
 type FormProps = {
   loading: boolean;
@@ -40,9 +41,7 @@ export default function Form(props: FormProps) {
             placeholder='Por ej: "Morfleps"'
           />
         </div>
-        <button className={styles.submitButton} type="submit">
-          BUSCAR
-        </button>
+        <Button searchButton>BUSCAR</Button>
       </div>
     </form>
   );

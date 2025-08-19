@@ -19,6 +19,6 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: #7b118b;
+  text-decoration: underline;
 }

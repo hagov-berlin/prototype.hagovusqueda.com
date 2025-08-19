@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Subtitle } from "@/data/types";
 import styles from "./subtitle-result.module.css";
+import Button from "./button";
 
 function secondsToTime(secondsNumber: number) {
   const cleanedSeconds = Math.max(0, secondsNumber);
@@ -51,7 +52,7 @@ export function SubtitleResult(props: SubtitleProps) {
           <span className={styles.subtitleTime}>{secondsToTime(props.subtitle[1])}</span>
           <span className={styles.subtitleText}>{props.subtitle[0]}</span>
         </div>
-        {expanded ? null : <button className={styles.subtitleButton}>Ver</button>}
+        {expanded ? null : <Button>VER</Button>}
       </div>
       {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle[1]} />}
     </div>

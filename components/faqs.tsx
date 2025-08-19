@@ -12,7 +12,20 @@ export default function FAQs() {
       </li>
       <li>
         <h3>¿Por qué mi busqueda no tiene resultados?</h3>
-        <p>Los subtitulos autogenerados de Youtube están lejos de ser perfectos.</p>
+        <p>
+          Los subtitulos autogenerados de Youtube están lejos de ser perfectos. Por ej, muchas veces
+          no puede identificar nombres propios y tiene problemas para identificar palabras cuando
+          mas de una persona habla a la vez.
+        </p>
+      </li>
+      <li>
+        <h3>¿A quien le reclamo?</h3>
+        <p>
+          Este buscador fue hecho con 💜 por{" "}
+          <a href="https://x.com/hagov_berlin" target="_blank">
+            @hagov_berlin
+          </a>
+        </p>
       </li>
     </ul>
   );

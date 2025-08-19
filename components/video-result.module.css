@@ -10,4 +10,10 @@
 
 .videoResultTitle {
   display: inline;
+
+  &:before {
+    content: "✹";
+    margin-right: 0.5em;
+    color: #a51681;
+  }
 }
