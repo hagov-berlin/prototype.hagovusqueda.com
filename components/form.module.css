@@ -2,21 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .subtitle {
-  font-size: 40px;
-  text-align: justify;
-
-  @media (max-width: 768px) {
-    text-align: center;
-  }
+  font-size: 32px;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .mainForm {
   display: flex;
 
-  @media (max-width: 768px) {
+  @media (max-width: 628px) {
     flex-direction: column;
     gap: 8px;
   }
@@ -33,25 +32,65 @@
   top: 50%;
   left: 8px;
   transform: translateY(-50%);
-
-  @media (prefers-color-scheme: dark) {
-    filter: invert(1);
-  }
 }
 
 .input {
   width: 100%;
-  font-size: 32px;
+  height: 40px;
+  font-size: 22px;
   padding-left: 50px;
-  border-radius: 4px;
-  border: solid 1px #777;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+
+  @media (max-width: 628px) {
+    border-radius: 4px;
+  }
 }
 
 .submitButton {
-  font-size: 28px;
+  font-size: 20px;
+  font-weight: 700;
   cursor: pointer;
   padding: 0 8px;
   height: 40px;
-  border-radius: 4px;
-  border: solid 1px #777;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  background: #a51681;
+  color: white;
+  position: relative;
+
+  @media (max-width: 628px) {
+    border-radius: 4px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #a51681;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    @media (max-width: 628px) {
+      content: none;
+    }
+  }
+
+  &:hover {
+    background: #b6138d;
+    &:before {
+      background: #b6138d;
+    }
+  }
+
+  &:active {
+    background: #cf0e9f;
+    &:before {
+      background: #cf0e9f;
+    }
+  }
 }

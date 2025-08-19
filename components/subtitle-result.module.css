@@ -7,13 +7,9 @@
   padding: 16px;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 628px) {
     padding: 0;
     border: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    border-color: #333;
   }
 }
 

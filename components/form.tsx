@@ -26,7 +26,7 @@ export default function Form(props: FormProps) {
 
   return (
     <form className={styles.form} onSubmit={onSubmit}>
-      <h2 className={styles.subtitle}>Buscar en el Archivo Hagovero</h2>
+      <h2 className={styles.subtitle}>Buscador de dialogos en el historial de streams</h2>
       <div className={styles.mainForm}>
         <div className={styles.inputContainer}>
           <img className={styles.searchIcon} src="/search.png" />
@@ -41,7 +41,7 @@ export default function Form(props: FormProps) {
           />
         </div>
         <button className={styles.submitButton} type="submit">
-          Buscar
+          BUSCAR
         </button>
       </div>
     </form>
