@@ -2,6 +2,36 @@ import type { Video } from "./types.ts";
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {
+    videoId: "qEwZBC4e7T0",
+    title:
+      "MARTES de LISTAS y CANDIDATOS, FAL0PA ELECTORAL y HORA AFRICANA | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "2:00:18",
+    date: "2025-08-19",
+  },
+  {
+    videoId: "n_TmTKGRpRQ",
+    title:
+      "FACHEROS de SAINT SEIYA y MATÍAS BOTTERO ¿Habló BIEN? de la GENTE | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:54:03",
+    date: "2025-08-19",
+  },
+  {
+    videoId: "8So20rFdMPQ",
+    title: "NACE EL PAPI y NOE BARRAL GRIGERA explica CIERRE DE LISTAS | ESCUCHO OFERTAS",
+    show: "EO",
+    duration: "2:14:53",
+    date: "2025-08-19",
+  },
+  {
+    videoId: "vKf9b2vGpNA",
+    title: "DIPUTADA CINÉFILA, MILEI VS IAN MOCHE y los PERRITOS de FEDE | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:00:45",
+    date: "2025-08-19",
+  },
+  {
     videoId: "wsoKLxe2RK0",
     title:
       "EDIBORDIAL de REGRESO, FILOSOFÍAS de BARBA y LOS FLOWS de RUFFITO | HAY ALGO AHÍ | BLENDER",
