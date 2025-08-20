@@ -21,4 +21,8 @@ body {
 a {
   color: #7b118b;
   text-decoration: underline;
+
+  &:focus {
+    outline: solid 1px #c518de;
+  }
 }

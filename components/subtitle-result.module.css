@@ -13,8 +13,12 @@
   }
 }
 
-.subtitleMatch:not(.subtitleMatchExpanded):hover {
-  border-color: #888;
+.subtitleMatch:not(.subtitleMatchExpanded):hover,
+.subtitleMatch:not(.subtitleMatchExpanded):focus-within {
+  outline: solid 1px #c518de;
+  @media (max-width: 628px) {
+    outline-offset: 10px;
+  }
 }
 
 .subtitleMatchExpanded {

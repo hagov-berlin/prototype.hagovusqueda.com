@@ -27,7 +27,7 @@ export default function Form(props: FormProps) {
 
   return (
     <form className={styles.form} onSubmit={onSubmit}>
-      <h2 className={styles.subtitle}>Buscador de dialogos en el historial de streams</h2>
+      <h2 className={styles.subtitle}>Buscador de dialogos en el historial de streams de HAA</h2>
       <div className={styles.mainForm}>
         <div className={styles.inputContainer}>
           <img className={styles.searchIcon} src="/search.png" />

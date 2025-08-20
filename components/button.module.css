@@ -16,6 +16,10 @@
   &:active {
     background: #cf0e9f;
   }
+
+  &:focus {
+    outline: solid 1px #ce4dae;
+  }
 }
 
 .searchButton {

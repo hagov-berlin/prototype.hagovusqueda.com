@@ -25,6 +25,7 @@ export default function FAQs() {
           <a href="https://x.com/hagov_berlin" target="_blank">
             @hagov_berlin
           </a>
+          . Enviar DM para sugerencias o pedidos.
         </p>
       </li>
     </ul>
