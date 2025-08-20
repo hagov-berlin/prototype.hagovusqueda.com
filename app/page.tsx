@@ -1,32 +1,16 @@
 "use client";
 
-import { useEffect, useState, Suspense } from "react";
+import { Suspense } from "react";
 
-import { Result } from "@/data/types";
-import search from "@/data/search";
 import Form from "@/components/form";
 import ResultsContainer from "@/components/results-container";
 import FAQs from "@/components/faqs";
-import { useHagovSearchParams } from "@/components/hooks";
+import { useSearch } from "@/components/hooks";
 
 import styles from "./page.module.css";
 
 function Page() {
-  const params = useHagovSearchParams();
-  const { searchTerm, show, matchWholeWords } = params;
-  const [loading, setLoading] = useState(!!searchTerm);
-  const [results, setResults] = useState<Result[]>([]);
-
-  useEffect(() => {
-    if (searchTerm) {
-      setLoading(true);
-      setResults([]);
-      search({ searchTerm, show, matchWholeWords }).then((newResults) => {
-        setResults(newResults);
-        setLoading(false);
-      });
-    }
-  }, [searchTerm, show, matchWholeWords]);
+  const { results, loading } = useSearch();
 
   return (
     <div className={styles.page}>
@@ -35,7 +19,7 @@ function Page() {
         <Form loading={loading} />
       </header>
       <main className={styles.main}>
-        <ResultsContainer params={params} loading={loading} results={results} />
+        <ResultsContainer loading={loading} results={results} />
       </main>
       <footer className={styles.footer}>
         <FAQs />

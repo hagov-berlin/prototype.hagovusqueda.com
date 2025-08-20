@@ -5,19 +5,22 @@ import { defaultParams } from "@/components/utils";
 import { Result, HagovSearchParams, VideoId, Subtitle } from "./types";
 import { videoList } from "./video-list";
 
-function normalizeText(text: string) {
-  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+function normalizeText(text: string, ignoreAccents: boolean) {
+  if (ignoreAccents) {
+    return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+  return text;
 }
 
 function buildRegex(params: HagovSearchParams) {
-  const normalizedSearchTerm = normalizeText(params.searchTerm);
+  const normalizedSearchTerm = normalizeText(params.searchTerm, params.ignoreAccents);
   const regexString = params.matchWholeWords
     ? `\\b${normalizedSearchTerm}\\b`
     : normalizedSearchTerm;
   const searchRegex = new RegExp(regexString, "i");
   console.log(searchRegex);
   return function testRegex(textToTest: string) {
-    const normalizedTextToTest = normalizeText(textToTest.normalize("NFD"));
+    const normalizedTextToTest = normalizeText(textToTest, params.ignoreAccents);
     return searchRegex.test(normalizedTextToTest);
   };
 }

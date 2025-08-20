@@ -1,6 +1,7 @@
-import { HagovSearchParams, Result } from "@/data/types";
+import { Result } from "@/data/types";
 import VideoResult from "./video-result";
 import styles from "./results-container.module.css";
+import { useHagovSearchParams } from "./hooks";
 
 function countSubtitles(results: Result[]) {
   const count = results.reduce((accum, result) => accum + result.subtitles.length, 0);
@@ -12,17 +13,14 @@ function countResults(results: Result[]) {
 }
 
 type ResultsContainerProps = {
-  params: Partial<HagovSearchParams>;
   loading: boolean;
   results: Result[];
 };
 
 export default function ResultsContainer(props: ResultsContainerProps) {
-  const {
-    loading,
-    results,
-    params: { searchTerm },
-  } = props;
+  const { loading, results } = props;
+
+  const { searchTerm } = useHagovSearchParams();
 
   if (!searchTerm) return null;
 
@@ -35,7 +33,7 @@ export default function ResultsContainer(props: ResultsContainerProps) {
   return (
     <div className={styles.results}>
       <h2 className={styles.title}>{title}</h2>
-      {results.map((result) => (
+      {results?.map((result) => (
         <VideoResult key={result.videoId} result={result} />
       ))}
     </div>

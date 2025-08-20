@@ -11,7 +11,7 @@ export function isShow(showString: string): showString is Show {
 
 export type Video = {
   videoId: VideoId;
-  duration: string;
+  duration: `${number}:${number}:${number}` | `${number}:${number}`;
   subtitles: Subtitle[];
   title: string;
   date: string;
@@ -24,8 +24,9 @@ export type Result = Video;
 
 export type HagovSearchParams = {
   searchTerm: string;
-  show?: Show;
-  matchWholeWords?: boolean;
+  show: Show;
+  matchWholeWords: boolean;
+  ignoreAccents: boolean;
   dateFrom?: string;
   dateUntil?: string;
 };
