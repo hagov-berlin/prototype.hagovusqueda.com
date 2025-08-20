@@ -10,6 +10,7 @@
     "data": "ts-node ./data/download-data"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "json-stringify-pretty-compact": "^4.0.0",
     "next": "15.4.6",
     "react": "19.1.0",
