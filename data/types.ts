@@ -30,3 +30,8 @@ export type HagovSearchParams = {
   dateFrom?: string;
   dateUntil?: string;
 };
+
+export type SearchResult = {
+  results: Result[];
+  resultsCapped: boolean;
+};

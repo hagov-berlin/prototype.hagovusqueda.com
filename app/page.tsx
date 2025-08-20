@@ -10,7 +10,7 @@ import { useSearch } from "@/components/hooks";
 import styles from "./page.module.css";
 
 function Page() {
-  const { results, loading } = useSearch();
+  const { results, loading, resultsCapped } = useSearch();
 
   return (
     <div className={styles.page}>
@@ -19,7 +19,7 @@ function Page() {
         <Form loading={loading} />
       </header>
       <main className={styles.main}>
-        <ResultsContainer loading={loading} results={results} />
+        <ResultsContainer loading={loading} results={results} resultsCapped={resultsCapped} />
       </main>
       <footer className={styles.footer}>
         <FAQs />

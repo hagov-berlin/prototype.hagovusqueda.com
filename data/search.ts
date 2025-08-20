@@ -2,7 +2,7 @@
 
 import { defaultParams } from "@/components/utils";
 /* eslint-disable @typescript-eslint/no-require-imports */
-import { Result, HagovSearchParams, VideoId, Subtitle } from "./types";
+import { Result, HagovSearchParams, VideoId, Subtitle, SearchResult } from "./types";
 import { videoList } from "./video-list";
 
 function normalizeText(text: string, ignoreAccents: boolean) {
@@ -18,7 +18,6 @@ function buildRegex(params: HagovSearchParams) {
     ? `\\b${normalizedSearchTerm}\\b`
     : normalizedSearchTerm;
   const searchRegex = new RegExp(regexString, "i");
-  console.log(searchRegex);
   return function testRegex(textToTest: string) {
     const normalizedTextToTest = normalizeText(textToTest, params.ignoreAccents);
     return searchRegex.test(normalizedTextToTest);
@@ -44,28 +43,44 @@ async function searchInVideo(videoId: VideoId, textMatcher: (text: string) => bo
   return matches;
 }
 
-export default async function search(params: HagovSearchParams): Promise<Result[]> {
+export default async function search(params: HagovSearchParams): Promise<SearchResult> {
   const textMatcher = buildRegex(params);
   const results: Result[] = [];
   const show = params.show || defaultParams.show;
 
+  const maxResultCount = 200;
+  let resultsCapped = false;
+  let count = 0;
+
   const resultsPromises = videoList
     .filter((video) => video.show === show)
     .map(async (video) => {
+      let matches: Subtitle[] | null = null;
       try {
-        const matches = await searchInVideo(video.videoId, textMatcher);
-        if (matches.length) {
+        matches = await searchInVideo(video.videoId, textMatcher);
+      } catch (error) {
+        console.warn(error);
+      }
+
+      if (count <= maxResultCount && matches && matches.length) {
+        if (count + matches.length <= maxResultCount) {
           results.push({
             ...video,
             subtitles: matches,
           });
+          count += matches.length;
+        } else if (count <= maxResultCount) {
+          results.push({
+            ...video,
+            subtitles: matches.slice(0, maxResultCount - count),
+          });
+          count = maxResultCount;
+          resultsCapped = true;
         }
-      } catch (error) {
-        console.warn(error);
       }
     });
 
   await Promise.all(resultsPromises);
 
-  return results;
+  return { results, resultsCapped };
 }

@@ -15,10 +15,11 @@ function countResults(results: Result[]) {
 type ResultsContainerProps = {
   loading: boolean;
   results: Result[];
+  resultsCapped: boolean;
 };
 
 export default function ResultsContainer(props: ResultsContainerProps) {
-  const { loading, results } = props;
+  const { loading, results, resultsCapped } = props;
 
   const { searchTerm } = useHagovSearchParams();
 
@@ -28,7 +29,9 @@ export default function ResultsContainer(props: ResultsContainerProps) {
     ? "Buscando..."
     : results.length === 0
     ? `No hay resultados para "${searchTerm}"`
-    : `${countSubtitles(results)} en ${countResults(results)} para "${searchTerm}"`;
+    : `${resultsCapped ? "Mas de " : ""}${countSubtitles(results)} en ${countResults(
+        results
+      )} para "${searchTerm}"`;
 
   return (
     <div className={styles.results}>

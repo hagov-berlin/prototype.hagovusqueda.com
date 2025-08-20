@@ -32,17 +32,20 @@ export function useSearch() {
   const { searchTerm, show, matchWholeWords, ignoreAccents } = params;
   const [results, setResults] = useState<Result[]>([]);
   const [loading, setLoading] = useState(!!searchTerm);
+  const [resultsCapped, setResultsCapped] = useState(!!searchTerm);
 
   useEffect(() => {
     if (searchTerm?.length > 0) {
       setResults([]);
+      setResultsCapped(false);
       setLoading(true);
-      search({ searchTerm, show, matchWholeWords, ignoreAccents }).then((newResults) => {
-        setResults(newResults);
+      search({ searchTerm, show, matchWholeWords, ignoreAccents }).then((searchResults) => {
+        setResults(searchResults.results);
+        setResultsCapped(searchResults.resultsCapped);
         setLoading(false);
       });
     }
   }, [searchTerm, show, matchWholeWords, ignoreAccents]);
 
-  return { results, loading };
+  return { results, loading, resultsCapped };
 }
