@@ -4,6 +4,7 @@ import styles from "./form.module.css";
 import { defaultParams, urlWithQueryParams } from "./utils";
 import Button from "./button";
 import { useHagovSearchParams } from "./hooks";
+import { Show } from "@/data/types";
 
 type FormProps = {
   loading: boolean;
@@ -20,8 +21,7 @@ export default function Form(props: FormProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const ignoreAccentsRef = useRef<HTMLInputElement>(null);
   const matchWholeWordsRef = useRef<HTMLInputElement>(null);
-  const showHAARef = useRef<HTMLInputElement>(null);
-  const showHYFRef = useRef<HTMLInputElement>(null);
+  const showSelectRef = useRef<HTMLSelectElement>(null);
 
   const onSubmit = async (event: FormEvent) => {
     event.preventDefault();
@@ -29,15 +29,14 @@ export default function Form(props: FormProps) {
       !inputRef.current ||
       !ignoreAccentsRef.current ||
       !matchWholeWordsRef.current ||
-      !showHAARef.current ||
-      !showHYFRef.current ||
+      !showSelectRef.current ||
       props.loading
     )
       return;
     const searchTerm = inputRef.current.value;
     const ignoreAccents = ignoreAccentsRef.current.checked;
     const matchWholeWords = matchWholeWordsRef.current.checked;
-    const show = showHAARef.current.checked ? "HAA" : "HYF";
+    const show = showSelectRef.current.value as Show;
     const newUrl = urlWithQueryParams({
       ...defaultParams,
       searchTerm,
@@ -84,26 +83,45 @@ export default function Form(props: FormProps) {
       </div>
       <div className={advancedOptionsClassName}>
         <label>
-          <input type="checkbox" defaultChecked={ignoreAccents} ref={ignoreAccentsRef} />
+          <input
+            type="checkbox"
+            defaultChecked={ignoreAccents}
+            ref={ignoreAccentsRef}
+            disabled={props.loading}
+          />
           Ignorar acentos
         </label>
       </div>
       <div className={advancedOptionsClassName}>
         <label>
-          <input type="checkbox" defaultChecked={matchWholeWords} ref={matchWholeWordsRef} />
+          <input
+            type="checkbox"
+            defaultChecked={matchWholeWords}
+            ref={matchWholeWordsRef}
+            disabled={props.loading}
+          />
           Buscar palabras completas
         </label>
       </div>
       <div className={advancedOptionsClassName}>
         <label>Buscar en</label>
-        <label>
-          <input type="radio" name="show" defaultChecked={show === "HAA"} ref={showHAARef} />
-          Hay Algo Ahi
-        </label>
-        <label>
-          <input type="radio" name="show" defaultChecked={show === "HYF"} ref={showHYFRef} />
-          Horrible y Fascinante
-        </label>
+        <select ref={showSelectRef} disabled={props.loading}>
+          <option value="HAA" selected={show === "HAA"}>
+            Hay Algo Ahi
+          </option>
+          <option value="HYF" selected={show === "HYF"}>
+            Horrible y Fascinante
+          </option>
+          <option value="SCDY" selected={show === "SCDY"}>
+            San Clemente del Youtube
+          </option>
+          <option value="CS" selected={show === "CS"}>
+            Costa Stream
+          </option>
+          <option value="ESPECIAL" selected={show === "ESPECIAL"}>
+            Especiales Blender
+          </option>
+        </select>
       </div>
     </form>
   );

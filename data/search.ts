@@ -69,7 +69,7 @@ export default async function search(params: HagovSearchParams): Promise<SearchR
             subtitles: matches,
           });
           count += matches.length;
-        } else if (count <= maxResultCount) {
+        } else if (count < maxResultCount) {
           results.push({
             ...video,
             subtitles: matches.slice(0, maxResultCount - count),

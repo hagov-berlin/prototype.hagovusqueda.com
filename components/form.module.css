@@ -97,3 +97,23 @@
   border-color: #c518de;
   background: radial-gradient(#c518de 0%, #c518de 50%, transparent 51%);
 }
+
+.advancedOptions label:hover input {
+  border-color: #b6138d;
+}
+
+.advancedOptions select {
+  appearance: none;
+  background: none;
+  border: solid 2px #c518de;
+  border-radius: 4px;
+  color: currentColor;
+  padding: 4px 8px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.advancedOptions select:hover {
+  border-color: #b6138d;
+}
