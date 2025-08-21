@@ -2,6 +2,37 @@ import type { Video } from "./types.ts";
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {
+    videoId: "HaDYkip7038",
+    title: "MIEDCOLES de MIEDOS, TRAUMAS y MONSTRUOS ARGENTOS | HAY ALGO AHÍ | BLENDER",
+    show: "HAA",
+    duration: "2:04:00",
+    date: "2025-08-20",
+  },
+  {
+    videoId: "d_GBIXxJLps",
+    title:
+      "MARTÍN FIERRO de MASCOTAS, SERIES IMPERDIBLES y FIGHTING GAMES | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:49:06",
+    date: "2025-08-20",
+  },
+  {
+    videoId: "sAdTJcfeQLA",
+    title:
+      "AZZARO e IÑAKI GUTIÉRREZ entre BOCA, KIRCHNERISMO y ACUSACIONES | ESCUCHO OFERTAS | BLENDER",
+    show: "EO",
+    duration: "2:21:33",
+    date: "2025-08-20",
+  },
+  {
+    videoId: "e1kaVvAFB1Y",
+    title:
+      "DÍA DE VETOS, la HISTORIA de las PAPAS FRITAS y MASCOTAS NOMINADAS | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:00:41",
+    date: "2025-08-20",
+  },
+  {
     videoId: "qEwZBC4e7T0",
     title:
       "MARTES de LISTAS y CANDIDATOS, FAL0PA ELECTORAL y HORA AFRICANA | HAY ALGO AHÍ | BLENDER",

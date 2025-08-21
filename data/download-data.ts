@@ -60,9 +60,14 @@ async function getSubtitlesForVideo(videoId: string) {
   return fs.readFileSync(outputPathWithExtension).toString();
 }
 
+const videosWithoutSubtitles = ["t7htTMSCEUc"];
+const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS"];
+
 (async function main() {
+  let errorCount = 0;
   for (const video of videoList) {
-    if (!["HAA", "HYF", "SCDY"].includes(video.show)) continue;
+    if (!availableShows.includes(video.show)) continue;
+    if (videosWithoutSubtitles.includes(video.videoId)) continue;
 
     let subtitleContent = "";
     try {
@@ -70,6 +75,7 @@ async function getSubtitlesForVideo(videoId: string) {
     } catch (error) {
       console.error(`Failed to get subtitles for ${video.show}: ${video.videoId}`);
       console.error(error);
+      errorCount += 1;
       continue;
     }
     try {
@@ -77,7 +83,13 @@ async function getSubtitlesForVideo(videoId: string) {
     } catch (error) {
       console.error(`Failed to get convert subtitles for ${video.show}: ${video.videoId}`);
       console.error(error);
+      errorCount += 1;
       continue;
     }
+  }
+  if (errorCount) {
+    console.error(`ERRORS: ${errorCount}`);
+  } else {
+    console.log("No errors");
   }
 })();
