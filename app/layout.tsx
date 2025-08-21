@@ -21,7 +21,7 @@ const germaniaOne = Germania_One({
 });
 
 export const metadata: Metadata = {
-  title: "HagoVusqueda",
+  title: "HAGOVusqueda",
   description: "Buscador del registro hagovero",
 };
 
