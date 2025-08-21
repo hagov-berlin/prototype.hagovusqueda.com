@@ -21,7 +21,7 @@ type ResultsContainerProps = {
 export default function ResultsContainer(props: ResultsContainerProps) {
   const { loading, results, resultsCapped } = props;
 
-  const { searchTerm } = useHagovSearchParams();
+  const { searchTerm, show } = useHagovSearchParams();
 
   if (!searchTerm) return null;
 
@@ -31,7 +31,7 @@ export default function ResultsContainer(props: ResultsContainerProps) {
     ? `No hay resultados para "${searchTerm}"`
     : `${resultsCapped ? "Mas de " : ""}${countSubtitles(results)} en ${countResults(
         results
-      )} para "${searchTerm}"`;
+      )} para "${searchTerm}" en ${show}`;
 
   return (
     <div className={styles.results}>

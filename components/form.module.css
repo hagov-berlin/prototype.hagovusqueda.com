@@ -51,10 +51,25 @@
   }
 }
 
+.advancedOptionsToggleContainer {
+  text-align: right;
+}
+
+.advancedOptionsButton {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: currentColor;
+}
+
 .advancedOptions {
+  display: none;
+  gap: 16px;
+}
+
+.advancedOptionsVisible {
   display: flex;
-  justify-content: space-around;
-  gap: 4px;
 }
 
 .advancedOptions label {
