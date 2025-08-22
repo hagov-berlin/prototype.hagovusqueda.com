@@ -1,4 +1,10 @@
-import type { Video } from "./types.ts";
+import type { Video, VideoId } from "./types.ts";
+
+export const videosWithoutSubtitles: VideoId[] = [
+  "t7htTMSCEUc", // especial
+  "o8GcyZUzVfQ", // DI
+  "7AN1Uj7XiyA", // DI
+];
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {

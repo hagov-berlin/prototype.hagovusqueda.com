@@ -3,7 +3,7 @@
 import { defaultParams } from "@/components/utils";
 /* eslint-disable @typescript-eslint/no-require-imports */
 import { Result, HagovSearchParams, VideoId, Subtitle, SearchResult } from "./types";
-import { videoList } from "./video-list";
+import { videoList, videosWithoutSubtitles } from "./video-list";
 
 function normalizeText(text: string, ignoreAccents: boolean) {
   if (ignoreAccents) {
@@ -53,7 +53,7 @@ export default async function search(params: HagovSearchParams): Promise<SearchR
   let count = 0;
 
   const resultsPromises = videoList
-    .filter((video) => video.show === show)
+    .filter((video) => video.show === show && !videosWithoutSubtitles.includes(video.videoId))
     .map(async (video) => {
       let matches: Subtitle[] | null = null;
       try {

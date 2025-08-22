@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import { exec } from "child_process";
 import util from "node:util";
 import stringify from "json-stringify-pretty-compact";
-import { videoList } from "./video-list.ts";
+import { videoList, videosWithoutSubtitles } from "./video-list.ts";
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -62,11 +62,6 @@ async function getSubtitlesForVideo(videoId: string) {
   return fs.readFileSync(outputPathWithExtension).toString();
 }
 
-const videosWithoutSubtitles = [
-  "t7htTMSCEUc", // especial
-  "o8GcyZUzVfQ", // DI
-  "7AN1Uj7XiyA", // DI
-];
 const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS", "DI"];
 // [, "EEC", "BG", "EO"]
 
