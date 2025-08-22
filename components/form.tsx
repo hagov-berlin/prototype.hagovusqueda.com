@@ -106,6 +106,12 @@ export default function Form(props: FormProps) {
       <div className={advancedOptionsClassName}>
         <label>Buscar en</label>
         <select ref={showSelectRef} disabled={props.loading}>
+          <option value="CS" selected={show === "CS"}>
+            Costa Stream
+          </option>
+          <option value="ESPECIAL" selected={show === "ESPECIAL"}>
+            Especiales Blender
+          </option>
           <option value="HAA" selected={show === "HAA"}>
             Hay Algo Ahi
           </option>
@@ -114,12 +120,6 @@ export default function Form(props: FormProps) {
           </option>
           <option value="SCDY" selected={show === "SCDY"}>
             San Clemente del Youtube
-          </option>
-          <option value="CS" selected={show === "CS"}>
-            Costa Stream
-          </option>
-          <option value="ESPECIAL" selected={show === "ESPECIAL"}>
-            Especiales Blender
           </option>
         </select>
       </div>

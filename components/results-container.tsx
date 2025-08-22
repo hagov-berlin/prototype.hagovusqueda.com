@@ -1,4 +1,4 @@
-import { Result } from "@/data/types";
+import { Result, Show } from "@/data/types";
 import VideoResult from "./video-result";
 import styles from "./results-container.module.css";
 import { useHagovSearchParams } from "./hooks";
@@ -10,6 +10,36 @@ function countSubtitles(results: Result[]) {
 
 function countResults(results: Result[]) {
   return `${results.length} ${results.length === 1 ? "video" : "videos"}`;
+}
+
+function getTitle(
+  loading: boolean,
+  results: Result[],
+  searchTerm: string,
+  resultsCapped: boolean,
+  show: Show
+) {
+  if (loading) {
+    return "Buscando...";
+  }
+  const quotedSearchTerm = <span>“{searchTerm}”</span>;
+  if (results.length === 0) {
+    return <>No hay resultados para {quotedSearchTerm}</>;
+  }
+  const subtitlesCount = countSubtitles(results);
+  const videosCount = countResults(results);
+  if (resultsCapped) {
+    return (
+      <>
+        Mas de {subtitlesCount} en {videosCount} para {quotedSearchTerm} en {show}
+      </>
+    );
+  }
+  return (
+    <>
+      {subtitlesCount} en {videosCount} para {quotedSearchTerm} en {show}
+    </>
+  );
 }
 
 type ResultsContainerProps = {
@@ -25,13 +55,7 @@ export default function ResultsContainer(props: ResultsContainerProps) {
 
   if (!searchTerm) return null;
 
-  const title = loading
-    ? "Buscando..."
-    : results.length === 0
-    ? `No hay resultados para "${searchTerm}"`
-    : `${resultsCapped ? "Mas de " : ""}${countSubtitles(results)} en ${countResults(
-        results
-      )} para "${searchTerm}" en ${show}`;
+  const title = getTitle(loading, results, searchTerm, resultsCapped, show);
 
   return (
     <div className={styles.results}>
