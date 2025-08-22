@@ -52,7 +52,7 @@ async function getSubtitlesForVideo(videoId: string) {
     console.log(`Skipping download of subtitles for ${videoId}. Already downloaded`);
   } else {
     const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const command = `yt-dlp "${videoUrl}" --skip-download --write-auto-sub --sub-lang "es" --sub-format srt --output "${outputPath}"`;
+    const command = `yt-dlp "${videoUrl}" --skip-download --write-auto-sub --sub-lang "es" --sub-format srt --cookies-from-browser firefox --output "${outputPath}"`;
     console.log(`Downloading subtitles for ${videoId}`);
     const { stdout, stderr } = await execPromise(command);
     console.log(stdout);
@@ -62,12 +62,16 @@ async function getSubtitlesForVideo(videoId: string) {
   return fs.readFileSync(outputPathWithExtension).toString();
 }
 
-const videosWithoutSubtitles = ["t7htTMSCEUc"];
-const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS"];
-// ["DI", "EEC", "BG", "EO"]
+const videosWithoutSubtitles = [
+  "t7htTMSCEUc", // especial
+  "o8GcyZUzVfQ", // DI
+  "7AN1Uj7XiyA", // DI
+];
+const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS", "DI"];
+// [, "EEC", "BG", "EO"]
 
 (async function main() {
-  let errorCount = 0;
+  const errors: typeof videoList = [];
   for (const video of videoList) {
     if (!availableShows.includes(video.show)) continue;
     if (videosWithoutSubtitles.includes(video.videoId)) continue;
@@ -78,7 +82,7 @@ const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS"];
     } catch (error) {
       console.error(`Failed to get subtitles for ${video.show}: ${video.videoId}`);
       console.error(error);
-      errorCount += 1;
+      errors.push(video);
       continue;
     }
     try {
@@ -86,12 +90,13 @@ const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS"];
     } catch (error) {
       console.error(`Failed to get convert subtitles for ${video.show}: ${video.videoId}`);
       console.error(error);
-      errorCount += 1;
+      errors.push(video);
       continue;
     }
   }
-  if (errorCount) {
-    console.error(`ERRORS: ${errorCount}`);
+  if (errors.length) {
+    console.error(`ERRORS: ${errors.length}`);
+    errors.forEach((video) => console.log(video.videoId));
   } else {
     console.log("No errors");
   }

@@ -112,6 +112,9 @@ export default function Form(props: FormProps) {
           <option value="ESPECIAL" selected={show === "ESPECIAL"}>
             Especiales Blender
           </option>
+          <option value="DI" selected={show === "DI"}>
+            Desayuno Intermitente
+          </option>
           <option value="HAA" selected={show === "HAA"}>
             Hay Algo Ahi
           </option>
