@@ -109,6 +109,9 @@ export default function Form(props: FormProps) {
           <option value="CS" selected={show === "CS"}>
             Costa Stream
           </option>
+          <option value="EO" selected={show === "EO"}>
+            Escucho Ofertas
+          </option>
           <option value="ESPECIAL" selected={show === "ESPECIAL"}>
             Especiales Blender
           </option>

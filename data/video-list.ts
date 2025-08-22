@@ -4,6 +4,7 @@ export const videosWithoutSubtitles: VideoId[] = [
   "t7htTMSCEUc", // especial
   "o8GcyZUzVfQ", // DI
   "7AN1Uj7XiyA", // DI
+  "ellahOgTwxk", // EO
 ];
 
 export const videoList: Omit<Video, "subtitles">[] = [
