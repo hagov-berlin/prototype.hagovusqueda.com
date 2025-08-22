@@ -2,6 +2,36 @@ import type { Video } from "./types.ts";
 
 export const videoList: Omit<Video, "subtitles">[] = [
   {
+    videoId: "efDOkyWx3i4",
+    title: "FREESSTYLE de ACRU, CURLING de CARRITOS Y PASE de F4L0PA | HAY ALGO AHI | BLENDER",
+    show: "HAA",
+    duration: "2:02:50",
+    date: "2025-08-21",
+  },
+  {
+    videoId: "MlsBQH93nJo",
+    title:
+      "FEINMANN CONTRA TODOS, TAYLOR SWIFT y el CINE y VOLVIÓ el TARARO | HORRIBLE Y FASCINANTE | BLENDER",
+    show: "HYF",
+    duration: "1:51:09",
+    date: "2025-08-21",
+  },
+  {
+    videoId: "Q2j5PprrAMY",
+    title: "JUEVES de EVIL GUILLE y PELIGROS y MITOS de la IA | ESCUCHO OFERTAS | BLENDER",
+    show: "EO",
+    duration: "2:21:53",
+    date: "2025-08-21",
+  },
+  {
+    videoId: "0tdIHaWrGyQ",
+    title:
+      "CAOS y VIOLENCIA en INDEPENDIENTE - U DE CHILE y SPAGNUOLO AFUERA | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:00:41",
+    date: "2025-08-21",
+  },
+  {
     videoId: "HaDYkip7038",
     title: "MIEDCOLES de MIEDOS, TRAUMAS y MONSTRUOS ARGENTOS | HAY ALGO AHÍ | BLENDER",
     show: "HAA",

@@ -54,7 +54,9 @@ async function getSubtitlesForVideo(videoId: string) {
     const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
     const command = `yt-dlp "${videoUrl}" --skip-download --write-auto-sub --sub-lang "es" --sub-format srt --output "${outputPath}"`;
     console.log(`Downloading subtitles for ${videoId}`);
-    await execPromise(command);
+    const { stdout, stderr } = await execPromise(command);
+    console.log(stdout);
+    console.error(stderr);
   }
 
   return fs.readFileSync(outputPathWithExtension).toString();
@@ -62,6 +64,7 @@ async function getSubtitlesForVideo(videoId: string) {
 
 const videosWithoutSubtitles = ["t7htTMSCEUc"];
 const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS"];
+// ["DI", "EEC", "BG", "EO"]
 
 (async function main() {
   let errorCount = 0;
