@@ -62,13 +62,9 @@ async function getSubtitlesForVideo(videoId: string) {
   return fs.readFileSync(outputPathWithExtension).toString();
 }
 
-const availableShows = ["HAA", "HYF", "SCDY", "ESPECIAL", "CS", "DI", "EO"];
-// [, "EEC", "BG"]
-
 (async function main() {
   const errors: typeof videoList = [];
   for (const video of videoList) {
-    if (!availableShows.includes(video.show)) continue;
     if (videosWithoutSubtitles.includes(video.videoId)) continue;
 
     let subtitleContent = "";
