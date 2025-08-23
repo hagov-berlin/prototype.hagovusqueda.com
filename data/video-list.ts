@@ -5,9 +5,26 @@ export const videosWithoutSubtitles: VideoId[] = [
   "o8GcyZUzVfQ", // DI
   "7AN1Uj7XiyA", // DI
   "ellahOgTwxk", // EO
+  "pq2mnDUOCbE", // DI
 ];
 
 export const videoList: Omit<Video, "subtitles">[] = [
+  {
+    videoId: "3C5r9kDW9_I",
+    title:
+      "SOLTEROS CODICIADOS, JANE a MASTERCHEF y FAMOSOS INTERANCIONALES | ESCUCHO OFERTAS | BLENDER",
+    show: "EO",
+    duration: "2:32:23",
+    date: "2025-08-22",
+  },
+  {
+    videoId: "pq2mnDUOCbE",
+    title:
+      "ALLANAMIENTOS y BOLSOS de DÓLARES y el PROBLEMA del HUSO HORARIO | DESAYUNO INTERMITENTE",
+    show: "DI",
+    duration: "2:02:38",
+    date: "2025-08-22",
+  },
   {
     videoId: "efDOkyWx3i4",
     title: "FREESSTYLE de ACRU, CURLING de CARRITOS Y PASE de F4L0PA | HAY ALGO AHI | BLENDER",
