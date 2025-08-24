@@ -1,4 +1,4 @@
-import type { Video, VideoId } from "./types.ts";
+import type { Video, VideoId } from "./types";
 
 export const videosWithoutSubtitles: VideoId[] = [
   "t7htTMSCEUc", // especial

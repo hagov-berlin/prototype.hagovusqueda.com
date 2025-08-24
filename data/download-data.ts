@@ -1,13 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import { exec } from "child_process";
 import util from "node:util";
 import stringify from "json-stringify-pretty-compact";
-import { videoList, videosWithoutSubtitles } from "./video-list.ts";
-
-const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-const __dirname = path.dirname(__filename); // get the name of the directory
+import { videoList, videosWithoutSubtitles } from "./video-list";
+import { timeToSeconds } from "./utils";
 
 const CONFIG = {
   jsonFolderOutputPath: path.join(__dirname, "subtitles_json"),
@@ -15,17 +12,6 @@ const CONFIG = {
 } as const;
 
 const execPromise = util.promisify(exec);
-
-function timeToSeconds(rawTimeString: string, videoId: string) {
-  if (!rawTimeString.includes(","))
-    throw new Error(`Cannot parse "${rawTimeString}" at ${videoId}`);
-  const [timeString] = rawTimeString.split(",");
-  const [hoursString, minutesString, secondsString] = timeString.split(":");
-  const hours = parseInt(hoursString, 10);
-  const minutes = parseInt(minutesString, 10);
-  const seconds = parseInt(secondsString, 10);
-  return seconds + minutes * 60 + hours * 60 * 60;
-}
 
 function convertSrtToJSON(videoId: string, subtitleContent: string) {
   console.log(`Converting raw subtitle to JSON for video ${videoId}`);
