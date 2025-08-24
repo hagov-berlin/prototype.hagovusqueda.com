@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "download-list": "ts-node --compilerOptions '{ \"module\": \"CommonJS\" }' ./data/download-list",
     "data": "ts-node --compilerOptions '{ \"module\": \"CommonJS\" }' ./data/download-data"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
     "ts-node": "^10.9.2",

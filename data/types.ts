@@ -11,16 +11,21 @@ export function isShow(showString: string): showString is Show {
 
 export type Video = {
   videoId: VideoId;
-  duration: `${number}:${number}:${number}` | `${number}:${number}`;
-  subtitles: Subtitle[];
   title: string;
   date: string;
   show: Show;
+  thumbnail: {
+    url: string;
+    width: number;
+    height: number;
+  };
 };
 
 // Diff is only conceptual.
 // Result is used in the client and doesn't have the full list of subtitles (only the matched subtitles)
-export type Result = Video;
+export type Result = Video & {
+  subtitles: Subtitle[];
+};
 
 export type HagovSearchParams = {
   searchTerm: string;

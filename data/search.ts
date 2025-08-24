@@ -2,8 +2,11 @@
 
 import { defaultParams } from "@/components/utils";
 /* eslint-disable @typescript-eslint/no-require-imports */
-import { Result, HagovSearchParams, VideoId, Subtitle, SearchResult } from "./types";
-import { videoList, videosWithoutSubtitles } from "./video-list";
+import { Result, HagovSearchParams, VideoId, Subtitle, SearchResult, Video } from "./types";
+import videosWithoutSubtitles from "./videos/missing-subtitles";
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const videoList: Video[] = require("./videos/list.json");
 
 function normalizeText(text: string, ignoreAccents: boolean) {
   if (ignoreAccents) {

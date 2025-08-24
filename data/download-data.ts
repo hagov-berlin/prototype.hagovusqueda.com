@@ -3,8 +3,12 @@ import path from "path";
 import { exec } from "child_process";
 import util from "node:util";
 import stringify from "json-stringify-pretty-compact";
-import { videoList, videosWithoutSubtitles } from "./video-list";
+import videosWithoutSubtitles from "./videos/missing-subtitles";
 import { timeToSeconds } from "./utils";
+import { Video } from "./types";
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const videoList: Video[] = require("./videos/list.json");
 
 const CONFIG = {
   jsonFolderOutputPath: path.join(__dirname, "subtitles_json"),
