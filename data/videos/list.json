@@ -2,42 +2,49 @@
   {
     "videoId": "WdHPRF1FInI",
     "title": "ESTO ES CINE - EPISODIO 1 SCREAM y el SLASHER DEFINITIVO con GUILLE AQUINO Y NAVAJA CRIMEN | BLENDER",
+    "show": "EEC",
     "date": "2023-08-22T00:00:09Z",
     "duration": "PT1H49M5S"
   },
   {
     "videoId": "crRnXqv-w0w",
     "title": "ESTO ES CINE - EPISODIO 2 - LAS SECUELAS con GUILLE AQUINO y NAVAJA CRIMEN | BLENDER",
+    "show": "EEC",
     "date": "2023-09-05T00:00:08Z",
     "duration": "PT1H37M21S"
   },
   {
     "videoId": "xZQDkaTSepI",
     "title": "ESTO ES CINE - EPISODIO 3 - ROM COMS GUILLE Y NAVAJA SE ENAMORAN | BLENDER",
+    "show": "EEC",
     "date": "2023-09-19T00:00:11Z",
     "duration": "PT1H34M10S"
   },
   {
     "videoId": "b1IT9KMNoU4",
     "title": "ESTO ES CINE - EPISODIO 4 - FOUND FOOTAGE con NAVAJA CRIMEN y GUILLE AQUINO | BLENDER",
+    "show": "EEC",
     "date": "2023-10-03T00:00:07Z",
     "duration": "PT1H49M8S"
   },
   {
     "videoId": "EyBGG_hFkW4",
     "title": "ESTO ES CINE - PELÍCULAS DE LOCKERS - EPISODIO 5 con NAVAJA CRIMEN y GUILLE AQUINO | BLENDER",
+    "show": "EEC",
     "date": "2023-10-17T00:00:08Z",
     "duration": "PT1H53M13S"
   },
   {
     "videoId": "o7H-SKkR8_M",
     "title": "DURO DE MATAR con NAVAJA CRIMEN Y GUILLE AQUINO | ESTO ES CINE EPISODIO 6 | BLENDER",
+    "show": "EEC",
     "date": "2023-10-31T00:00:08Z",
     "duration": "PT2H23M24S"
   },
   {
     "videoId": "dMCBFR0hUd8",
     "title": "LA TRILOGÍA CORNETTO | ESTO ES CINE EPISODIO 7 | BLENDER",
+    "show": "EEC",
     "date": "2023-11-14T00:00:08Z",
     "duration": "PT2H7M51S"
   },
@@ -51,32 +58,660 @@
   {
     "videoId": "u0df-DrrLHE",
     "title": "ESTO ES CINE - ESPECIAL TARANTINO SEASON FINALE en CINÉPOLIS | BLENDER",
+    "show": "EEC",
     "date": "2023-12-12T00:00:08Z",
     "duration": "PT2H9M26S"
   },
   {
     "videoId": "eVUDyHHnwow",
     "title": "ESTO ES CINE - ESPECIAL NAVIDAD: MI POBRE ANGELITO (HOME ALONE) | BLENDER",
+    "show": "EEC",
     "date": "2023-12-26T00:00:10Z",
     "duration": "PT1H3M49S"
   },
   {
     "videoId": "d5JNyWr2QfM",
     "title": "ESTO ES CINE | MI POBRE ANGELITO 2 (HOME ALONE 2) | ESPECIAL DE VERANO | BLENDER",
+    "show": "EEC",
     "date": "2024-01-02T00:00:08Z",
     "duration": "PT59M6S"
   },
   {
+    "videoId": "DpezaapuOxk",
+    "title": "HAY ALGO AHÍ | Se acabó el GSV VOLVIÓ REBORD ¿MILEI FRACASÓ o MINTIÓ? | BLENDER",
+    "show": "HAA",
+    "date": "2024-02-27T04:41:19Z",
+    "duration": "PT2H20M40S"
+  },
+  {
+    "videoId": "vAdqvLmUsmc",
+    "title": "Los GILES picaron el BAIT , MÁXIMA VERDAD con SCHARGRODSKY | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-02-28T04:10:49Z",
+    "duration": "PT2H2M50S"
+  },
+  {
+    "videoId": "AWS2nqBaGnY",
+    "title": "HAY ALGO AHÍ | CABALLO HOMOSEXUAL DE LAS MONTAÑAS, CINE CON LOS REAL ONE| BLENDER",
+    "show": "HAA",
+    "date": "2024-02-29T02:52:29Z",
+    "duration": "PT1H44M27S"
+  },
+  {
+    "videoId": "dNDqCQTJ1Sc",
+    "title": "HAY ALGO AHÍ | FANTASMAS Y STORYBORD de Carlos Pellegrini | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-01T04:13:38Z",
+    "duration": "PT1H56M6S"
+  },
+  {
+    "videoId": "WK430Nb_6NI",
+    "title": "HAY ALGO AHÍ | REBORD RE CALIENTE, vino PEDRO ROSEMBLAT y REACCIONAN a MILEI | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-02T03:33:44Z",
+    "duration": "PT2H24M15S"
+  },
+  {
+    "videoId": "jaRUFGIzDkg",
+    "title": "HAY ALGO AHÍ | EDIBORDIAL DE CAVANI, especial DUNE y RUFFO habló de SEX0 con su ABUELO | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-05T03:47:22Z",
+    "duration": "PT2H16M30S"
+  },
+  {
+    "videoId": "0cfptsMQ7kk",
+    "title": "HAY ALGO AHÍ | TE COMISTE EL BAIT y SCHARGRODSKY le FALTA EL RESPETO A REBORD | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-06T03:02:33Z",
+    "duration": "PT1H54M6S"
+  },
+  {
+    "videoId": "r-tIjP0V7DE",
+    "title": "HAY ALGO AHÍ | ESPECIAL DUNE con SEBA DE CARO | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-07T03:26:36Z",
+    "duration": "PT2H14M47S"
+  },
+  {
+    "videoId": "KYh2yPsZdH0",
+    "title": "HAY ALGO AHÍ | DÍA DEL HINCHA DE RACING, MARINEROS y STORYBORD | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-08T02:58:02Z",
+    "duration": "PT1H45M8S"
+  },
+  {
+    "videoId": "8SaTPWObTZY",
+    "title": "HAY ALGO AHÍ | FUNEBORD y DRAGON BALL Z | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-09T03:09:22Z",
+    "duration": "PT1H57M11S"
+  },
+  {
+    "videoId": "v72FogYC5Jk",
+    "title": "MÁXIMO MAME, MÁXIMA NETA con HAGOVERO MEXICANO, EDIBORDIAL | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-12T03:20:22Z",
+    "duration": "PT1H59M9S"
+  },
+  {
+    "videoId": "2JKcFxNAYmc",
+    "title": "MEMES del CAGAZO de RUFFO, SOMOS VIEJOS, LA HORA AFRICANA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-13T03:14:44Z",
+    "duration": "PT2H3M42S"
+  },
+  {
+    "videoId": "6vwMMCG6E3o",
+    "title": "MILEI VS VILLARRUEL, RUFFO HUNTER y LA PELEA DEL TURCO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-14T03:16:17Z",
+    "duration": "PT1H53M23S"
+  },
+  {
+    "videoId": "BTUVLk0yEBI",
+    "title": "EL SENADO RECHAZÓ EL DNU, FELIPE PIGNA y STORYBORD de FACUNDO QUIROGA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-15T03:00:55Z",
+    "duration": "PT1H54M39S"
+  },
+  {
+    "videoId": "jsVJ1tGJaxY",
+    "title": "LUQUITAS RODRÍGUEZ, MÚSICA CON UN CORCHO y MÁXIMO HHA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-16T04:01:05Z",
+    "duration": "PT2H33S"
+  },
+  {
+    "videoId": "ZcGZAYEiWy0",
+    "title": "EDIBORDIAL, REBORD NO PIDE PERDÓN e IVÁN SCHARGRODSKY con NETA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-20T03:16:54Z",
+    "duration": "PT2H4M34S"
+  },
+  {
+    "videoId": "pVrcl60A1TA",
+    "title": "CHAU RACISM0 con DANZA ZAOULI y APRENDIMOS sobre FINANZAS con EL ZAR | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-21T03:57:02Z",
+    "duration": "PT1H51M45S"
+  },
+  {
+    "videoId": "kvwcCtDddkI",
+    "title": "STORYBORD de TITANOMAQUIA, YIHAD y REQUISITOS MÍNIMOS de HUMANIDAD | HAY ALGO AHÍ | | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-22T06:17:43Z",
+    "duration": "PT1H56M52S"
+  },
+  {
+    "videoId": "xNvWhMD0Muo",
+    "title": "GUILLE AQUINO, el FAVORITO de los NIÑOS y MUCHO PEDO con AXILAS | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-23T04:10:21Z",
+    "duration": "PT2H8M40S"
+  },
+  {
+    "videoId": "bY-_OFOd7Jg",
+    "title": "EDIBORDIAL 24M, MUSICBORD y CINE de los 2000 | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-03-26T03:14:41Z",
+    "duration": "PT1H58M35S"
+  },
+  {
+    "videoId": "FiqIfoxh1as",
+    "title": "DATA REAL del AFRICANO, NOCHES de SUDA, ABRAZAMOS a RUFFO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-27T03:05:56Z",
+    "duration": "PT1H57M2S"
+  },
+  {
+    "videoId": "JlrHZnugqN0",
+    "title": "ESPECIAL JESÚS con JUAN GRABOIS y OFELIA FERNÁNDEZ | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-03-28T03:00:02Z",
+    "duration": "PT1H59M10S"
+  },
+  {
+    "videoId": "QBzrNG6jViI",
+    "title": "EDIBORDIAL BECERRO DE ORO, NOCHE de SUDA con ALFRE MONTES DE OCA | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-04-04T03:16:54Z",
+    "duration": "PT1H55M21S"
+  },
+  {
+    "videoId": "UYFeafgigjY",
+    "title": "YACOBITTI invitó a PELEAR a ADORNI, STORYBORD de ODÍN | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-05T02:51:28Z",
+    "duration": "PT1H46M11S"
+  },
+  {
+    "videoId": "tVpqFrKIxOk",
+    "title": "¿HAY ALGO AHÍ? Con SANTIAGO CÚNEO y ASADO DE FASO, EDIBORDIAL DE URGENCIA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-06T03:25:55Z",
+    "duration": "PT2H8M14S"
+  },
+  {
+    "videoId": "QRmEQ8X-I9M",
+    "title": "GL0RY H0LES, las PREOCUPACIONES de REBORD, FUTBORD y AMIGOS de RUFFO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-09T03:02:20Z",
+    "duration": "PT1H55M34S"
+  },
+  {
+    "videoId": "witx-UazUEY",
+    "title": "EL AFRICANO está LOCO, MACRI SALIÓ CAMPEÓN y HHA en el KABADDI | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-10T04:10:43Z",
+    "duration": "PT2H31S"
+  },
+  {
+    "videoId": "-LhwP2djbjU",
+    "title": "COSCU habla de TODO, VAMOS por ROLÓN y el ORIGEN del SUPERFLY | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-11T03:03:37Z",
+    "duration": "PT1H50M24S"
+  },
+  {
+    "videoId": "_JCnfYSY_-s",
+    "title": "ESPECIAL SHINGEKI NO KYOJIN con OFELIA FERNÁNDEZ, PABLO MONKY y NAVAJA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-12T02:55:14Z",
+    "duration": "PT1H51M38S"
+  },
+  {
+    "videoId": "aMDrk5Ek8Sc",
+    "title": "¿HAY ALGO AHÍ? Ft WALLAS, POKEMÓN, LE ROMPEN UN PLATO en la CABEZA a RUFFO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-13T03:20:18Z",
+    "duration": "PT2H4M41S"
+  },
+  {
+    "videoId": "uSSnh_qiPrk",
+    "title": "EDIBORDIAL LISIADA, el REPORTE de RUFFO y la TIERLIST de HAGOVEROS | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-16T03:34:46Z",
+    "duration": "PT1H56M56S"
+  },
+  {
+    "videoId": "ffYAj74FGWc",
+    "title": "REBORD vs GUILLE, RUFFITO SUPER FLY, el AFRICANO y una DATA EXCLUSIVA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-17T03:55:40Z",
+    "duration": "PT2H54S"
+  },
+  {
+    "videoId": "6LRb8GviEi4",
+    "title": "MORENO se SUBE al RING vs KICILLOF o ESPERT, DOOM en ALGO AHI HUNTER  | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-04-18T03:22:25Z",
+    "duration": "PT1H53M17S"
+  },
+  {
+    "videoId": "jI5N4GDeK-8",
+    "title": "POLÉMICA en el BART, GUILLE AQUINO Modo DIOS y RUFFO es MINGUITO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-19T03:02:52Z",
+    "duration": "PT1H58M27S"
+  },
+  {
+    "videoId": "8XBEZFpZJ_U",
+    "title": "RUFFIBORDIAL, ¿HAA? con GALIA MOLDAVSKY, MATZORAMA y JUAN RUOCCO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-20T18:01:56Z",
+    "duration": "PT1H53M7S"
+  },
+  {
+    "videoId": "PaxYe-jexqc",
+    "title": "EQUIBORDIAL, la CADENA NACIONAL irrumpe OTRA VEZ y CONSEJOS para la MARCHA | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-04-23T03:18:28Z",
+    "duration": "PT2H1M1S"
+  },
+  {
+    "videoId": "CpasHzFLaRY",
+    "title": "PERDÓN a LAM, MARCHA UNIVERSITARIA con RUFFO FRIENDS y el BÚHO SCHARGRODSKY | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-24T03:29:10Z",
+    "duration": "PT1H57M5S"
+  },
+  {
+    "videoId": "tVirwLYiig4",
+    "title": "BAILAMOS con BERNI y nos METIMOS en la DEEP WEB DOMINICANA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-25T03:07:17Z",
+    "duration": "PT1H47M29S"
+  },
+  {
+    "videoId": "p379Z0I3LNg",
+    "title": "MILEI ES un HAGOVERO y CENA JUDÍA PICADISIMA con GALIA y ROBERTO MOLDAVSKY | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-26T03:29:21Z",
+    "duration": "PT2H11M"
+  },
+  {
+    "videoId": "DRB_1SHFcBs",
+    "title": "¿HAY ALGO AHÍ? ALL THE NIGHT con EL GIGOLÓ e IVANA SZERMAN | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-27T03:55:24Z",
+    "duration": "PT1H57M48S"
+  },
+  {
+    "videoId": "P4ZkIDB9Ecc",
+    "title": "REBORD llama a CFK Y MORENO, RUFFITO de RESACA, FAMOSOS que son ANIMALES | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-04-30T03:21:06Z",
+    "duration": "PT1H55M55S"
+  },
+  {
+    "videoId": "wPvtiXjWLBw",
+    "title": "DILLOM COVER de WAKA WAKA, HORA AFRICANA y una CAMPERA para RUFFO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-01T04:13:48Z",
+    "duration": "PT1H57M3S"
+  },
+  {
+    "videoId": "85Ho6H13kHw",
+    "title": "LAS AVENTURAS DEL OSO REBORD Y CARPINCHO RUFFO, STORYBORD RUCCI | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-03T03:59:35Z",
+    "duration": "PT1H54M55S"
+  },
+  {
+    "videoId": "pIRnDF4iifg",
+    "title": "ESPECIAL STAR WARS con GUILLE AQUINO, NAZARENO CASERO, TOSCANO y MÁS | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-04T03:50:52Z",
+    "duration": "PT1H34M29S"
+  },
+  {
+    "videoId": "mryK2aHC2bg",
+    "title": "EDIBORDIAL MENOTTI, los 5 PORQUÉ de RUFFO y REBORD RECUPERÓ el WHISKY | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-07T03:23:18Z",
+    "duration": "PT1H54M14S"
+  },
+  {
+    "videoId": "RB1oH872U4g",
+    "title": "REBORD INCENTIVA a las TANITAS, COSMOLOGÍA, IVÁN SCHARGRODSKY sobre el RIGI | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-08T03:22:14Z",
+    "duration": "PT1H53M47S"
+  },
+  {
+    "videoId": "tJD8nLoSXUc",
+    "title": "ANÍBAL FERNÁNDEZ cacheteó una ARAÑA y REBORD se ASUSTÓ, RUFFO EUROVISIÓN | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-09T03:35:51Z",
+    "duration": "PT1H51M38S"
+  },
+  {
+    "videoId": "USMRAAlSbSE",
+    "title": "MARRA le REGALÓ ATÚN a REBORD, ECONOMÍA con D’ALESSANDRO y BICIBANDIDO | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-05-10T03:28:28Z",
+    "duration": "PT1H50M41S"
+  },
+  {
+    "videoId": "bA0XDlwmxG0",
+    "title": "CASAMIENTO EN VIVO, MASAJE a MASLATÓN en ¿HAY ALGO AHI?, FREESTYLE y TANGO | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-05-11T03:30:28Z",
+    "duration": "PT1H51M56S"
+  },
+  {
+    "videoId": "CTBQ61dfcgE",
+    "title": "EDIBORDIAL RIGI, REBORD sobre LESBICIDI0, EL PLANETA DE LOS SIMIOS | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-05-14T03:27:48Z",
+    "duration": "PT1H54M8S"
+  },
+  {
+    "videoId": "PXgoRilY1XE",
+    "title": "RUFFO NO VIÓ NADA y PERDIÓ su SILLA con el AFRICANO en LAS ENCUESTAS | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-15T03:58:05Z",
+    "duration": "PT2H4M54S"
+  },
+  {
+    "videoId": "6G0BYW3avT8",
+    "title": "DUKA LE BAILÓ EN LA CARA A REBORD, vino OCTA GENCARELLI y RELATÓ EN VIVO | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-05-16T03:31:54Z",
+    "duration": "PT2H1M4S"
+  },
+  {
+    "videoId": "8rrMwz-MGQU",
+    "title": "GERMÁN BEDER la VUELCA, SCIOLI con REBORD y NBA con JUANPOSITE | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-17T03:22:08Z",
+    "duration": "PT1H56M46S"
+  },
+  {
+    "videoId": "54PHpa038jY",
+    "title": "CANTO EN GERINGOSO y MAESTRO del AIRE con NOE CUSTODIO y MAXI BOSTERO | ¿HAY ALGO AHI? | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-18T03:31:45Z",
+    "duration": "PT1H54M4S"
+  },
+  {
+    "videoId": "EB4E_Naw4Eo",
+    "title": "REBORD PIDIÓ PERDÓN en la EDIBORDIAL y DUELO MARVEL VS DC | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-21T03:40:50Z",
+    "duration": "PT1H56M18S"
+  },
+  {
+    "videoId": "BY8tq2qu2jI",
+    "title": "RUFFO ACECHA al AFRICANO , vinieron LAS PIBAS DICEN y RIGI con JULIA STRADA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-22T03:11:19Z",
+    "duration": "PT1H54M27S"
+  },
+  {
+    "videoId": "VMx-3kHFtSs",
+    "title": "REBORD EXPLOTA contra MILEI en el LUNA PARK | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-23T04:15:18Z",
+    "duration": "PT1H56M13S"
+  },
+  {
+    "videoId": "8W67W7COuyw",
+    "title": "PANAM hizo BAILAR al OSO REBORD, al CARPINCHO RUFFO y a los REALITOS | HAY ALGO AKIDS | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-24T03:17:54Z",
+    "duration": "PT1H44M23S"
+  },
+  {
+    "videoId": "7GXBbZeYmRo",
+    "title": "CA7RIEL y PACO AMOROSO JUECES del SEDIMENTARIO y entrevista al TURCO ASÍS | ¿HAY ALGO AHÍ? | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-25T04:11:07Z",
+    "duration": "PT2H58S"
+  },
+  {
+    "videoId": "fJBAAMKGOd8",
+    "title": "EDIBORDIAL MILEI ES DEMICHELIS, la RENUNCIA de POSSE y REPORTE de RUFFO | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-28T03:08:06Z",
+    "duration": "PT1H59M"
+  },
+  {
+    "videoId": "yLLV0W7IcyU",
+    "title": "El PAPA BANCA LA SILLA de RUFFO, LUQUITAS RODRÍGUEZ y el LIBRO de MILEI | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-29T03:37:06Z",
+    "duration": "PT1H54M29S"
+  },
+  {
+    "videoId": "0qWgCOCzyGo",
+    "title": "MÁXIMA CIENCIA, GINÉS y ALGO AHI HUNTER sobre CORAJE EL PERRO COBARDE | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-30T03:05:53Z",
+    "duration": "PT1H53M43S"
+  },
+  {
+    "videoId": "XvvXQbkqU04",
+    "title": "REBORD y RUFFO LUCHAN en el ESPECIAL de CATCH, ELECTROCHONGO y J-MASTER | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-05-31T03:25:41Z",
+    "duration": "PT1H35M33S"
+  },
+  {
+    "videoId": "iXpaFvH8FN8",
+    "title": "CEJAS LOCAS, TANGO y CHISTES MALOS con PACHU PEÑA TENTADO como JURADO | ¿HAY ALGO AHI? | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-01T02:53:39Z",
+    "duration": "PT1H48M29S"
+  },
+  {
+    "videoId": "yPJ-KN8IYyE",
+    "title": "EDIBORDIAL del MODELO CIPAYO de MILEI y GODZILLA con JUAN RUOCCO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-04T04:29:42Z",
+    "duration": "PT2H8S"
+  },
+  {
+    "videoId": "QFYCHhiAymo",
+    "title": "REBORD abre UNA INTERNA, MAYANS con LA LEY BASES, EL AFRICANO y LOS ESPÍAS | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-05T03:31:41Z",
+    "duration": "PT1H54M47S"
+  },
+  {
+    "videoId": "79reLyvx1fE",
+    "title": "ESPECIAL TERROR con MAGNUS MEFISTO, SARGENTI, DEMIÁN RUGNA y MARCOS BERTA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-06T04:17:29Z",
+    "duration": "PT1H51M52S"
+  },
+  {
+    "videoId": "yXU2PQ9G6fk",
+    "title": "BELGRANO STORYBORD ft FELIPE PIGNA, REBORD FASHION ICON y MÁXIMA CIENCIA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-07T03:34:23Z",
+    "duration": "PT1H56M30S"
+  },
+  {
+    "videoId": "NuRSisYfefk",
+    "title": "NACE UNA NUEVA ESTRELLA, REBORD CANDIDATO, RUFFO TENOR, GUILLE TELÉPATA ¿HAY ALGO AHÍ? BLENDER",
+    "show": "HAA",
+    "date": "2024-06-08T03:35:31Z",
+    "duration": "PT2H2M4S"
+  },
+  {
+    "videoId": "9XqCQRgpZb4",
+    "title": "EDIBORDIAL de GUILLERMO MORENO, QUÉ TIPO DE GORDO SOS y vino FIO SARGENTI | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-11T03:46:18Z",
+    "duration": "PT1H59M9S"
+  },
+  {
+    "videoId": "5HvLc30-dhc",
+    "title": "El AFRICANO y la LEY DE BASES, PABLO DE HARO con RUNA y RUFFO en PENETONE | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-12T04:10:38Z",
+    "duration": "PT2H1M34S"
+  },
+  {
+    "videoId": "246A_GdOv0I",
+    "title": "LEY BASES APROBADA, vino GRABOIS, MANU JOVE en el SENADO, MAYANS TERMINATOR | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-13T04:08:12Z",
+    "duration": "PT2H17M24S"
+  },
+  {
+    "videoId": "NUwcuQ1MJFY",
+    "title": "MEMORIA nivel DIOS, MAXIMA ARQUITECTURA, Y TELEPATÍA entre RUFFO y REBORD | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-14T03:28:48Z",
+    "duration": "PT1H48M2S"
+  },
+  {
+    "videoId": "uv32eGkmhW8",
+    "title": "TATUAJE de RUFFO, INSTRUMENTO que CHILLA, MAURO SZETA Y JUANITA JURADOS ¿HAY ALGO AHÍ? | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-15T03:19:58Z",
+    "duration": "PT1H45M55S"
+  },
+  {
+    "videoId": "5iOmtemw7Ig",
+    "title": "EDIBORDIAL del BLENDER GATE, NADIE le toca el TOTO a CAPUTO en la HORA AFRICANA | HAY ALGO AHÍ",
+    "show": "HAA",
+    "date": "2024-06-19T03:36:37Z",
+    "duration": "PT1H49M26S"
+  },
+  {
+    "videoId": "A887WwzJYqQ",
+    "title": "HOUSE OF THE DRAGÓN con FIO SARGENTI y MÁXIMA VERDAD de sueño | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-20T04:15:41Z",
+    "duration": "PT1H55M19S"
+  },
+  {
+    "videoId": "_MldrHfsPgE",
+    "title": "ENEMIGOS de la SELECCIÓN, El TANO del LUNCH Y THE BOYS por FIO SARGENTI | HAY ALGO AHÍ |  BLENDER",
+    "show": "HAA",
+    "date": "2024-06-25T03:41:12Z",
+    "duration": "PT2H50S"
+  },
+  {
+    "videoId": "CjVYWnf__NA",
+    "title": "CRISIS en BOLIVIA, HORA AFRICANA PICANTE y MÁXIMA CIENCIA de GENÉTICA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-27T03:38:16Z",
+    "duration": "PT1H53M14S"
+  },
+  {
+    "videoId": "GQ_2lK3dk7Y",
+    "title": "LEY DE BASES con MANU JOVE, OSCAR ZAGO y MAIA JASTRE, HUNTER de TOTO NIEVAS | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-28T03:30:43Z",
+    "duration": "PT1H44M18S"
+  },
+  {
+    "videoId": "rUZBGRj-RNs",
+    "title": "LOS TALENTOS MÁS PICANTES, ft MUSCARI y SARAMALACARA y ANUNCIOS de CAPUTO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-06-29T03:42:43Z",
+    "duration": "PT1H51M8S"
+  },
+  {
+    "videoId": "JWZaA0GE2Xw",
+    "title": "EDIBORDIAL SE VIENE, la ÓPERA de MILEI, DRY SHELLS de HARRY POTTER | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-02T03:37:13Z",
+    "duration": "PT1H54M24S"
+  },
+  {
+    "videoId": "BZTElFlVkN8",
+    "title": "REBORD NO LA VE, LACUNZA ANALIZA EL PLAN ECONÓMICO y HORA AFRICANA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-03T03:33:53Z",
+    "duration": "PT1H43M50S"
+  },
+  {
+    "videoId": "YrqO1Vp-ku4",
+    "title": "SE VIENE EL ESPECIAL BATMAN, vino JULIO DE VIDO, SE PICÓ LA LUCHA de SUMO | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-04T03:43:13Z",
+    "duration": "PT1H49M1S"
+  },
+  {
+    "videoId": "F1bZqFcCLYg",
+    "title": "BATMAN REBORD: LA PELÍCULA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-06T04:00:09Z",
+    "duration": "PT41M39S"
+  },
+  {
     "videoId": "F-p6mkPjXAg",
     "title": "LA HISTORIA de BATMAN | ESTO ES CINE con Guille Aquino y Navaja Crimen | BLENDER",
+    "show": "EEC",
     "date": "2024-07-06T17:07:33Z",
     "duration": "PT1H53M34S"
   },
   {
+    "videoId": "zmJdEkWDs1s",
+    "title": "VUELVE EL MÉTODO, DRY SHELL de GRANT MORRISON y RUFFO a la MODA | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-09T03:44:35Z",
+    "duration": "PT2H1M15S"
+  },
+  {
+    "videoId": "tRmRaJBEorg",
+    "title": "MARIA EUGENIA VIDAL, El CUERVO LARROQUE y MÁXIMA CIENCIA de ENERGÍA NUCLEAR | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-11T03:59:18Z",
+    "duration": "PT1H42M53S"
+  },
+  {
+    "videoId": "tTFM6qcFYgk",
+    "title": "LILITA - REBORD | HAY ALGO AHÍ #1",
+    "show": "HAA",
+    "date": "2024-07-12T00:00:08Z",
+    "duration": "PT2H35M34S"
+  },
+  {
+    "videoId": "oxflTnSzEfM",
+    "title": "MARTÍN GARABAL y BLAIR con CHIQUITITAS, PÁJAROS, PINTURA en VIVO y BATERÍA | HAY ALGO AHI | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-13T04:34:28Z",
+    "duration": "PT1H49M49S"
+  },
+  {
     "videoId": "FeTnNvp_tPw",
     "title": "CHRISTOPHER NOLAN | ESTO ES CINE con Guille Aquino y Navaja Crimen | BLENDER",
+    "show": "EEC",
     "date": "2024-07-13T15:40:31Z",
     "duration": "PT1H24M20S"
+  },
+  {
+    "videoId": "930y8ptDO84",
+    "title": "EDIBORDIAL de CAMPEÓN, FIO SARGENTI y CONSPIRACIONES, FRENESÍ de ENCUESTAS | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-07-16T03:33:59Z",
+    "duration": "PT1H55M55S"
   },
   {
     "videoId": "hr8jgLjUaHI",
@@ -592,6 +1227,7 @@
   {
     "videoId": "OLz14pkdTWw",
     "title": "MARVEL PARTE 2 | ESTO ES CINE con Guille Aquino y Navaja Crimen | BLENDER",
+    "show": "EEC",
     "date": "2024-08-17T05:06:59Z",
     "duration": "PT1H48M35S"
   },
@@ -1128,6 +1764,13 @@
     "duration": "PT2H53M37S"
   },
   {
+    "videoId": "a5hC8F9C0h4",
+    "title": "DANIEL VILA - REBORD | HAY ALGO AHÍ #4",
+    "show": "HAA",
+    "date": "2024-09-20T00:50:07Z",
+    "duration": "PT1H9M43S"
+  },
+  {
     "videoId": "lA2lQ96Wpn8",
     "title": "DEBATE SUPERCLÁSICO con FERNANDO LAVECCHIA y EMILIO MOREIRA | HAY ALGO AHÍ | BLENDER",
     "show": "HAA",
@@ -1548,6 +2191,13 @@
     "duration": "PT2H54M15S"
   },
   {
+    "videoId": "tNAexQAZXbo",
+    "title": "DUHALDE - REBORD | HAY ALGO AHÍ #5 | BLENDER",
+    "show": "HAA",
+    "date": "2024-10-17T23:58:06Z",
+    "duration": "PT1H47M37S"
+  },
+  {
     "videoId": "ym0Ck7P5Ak4",
     "title": "ELONGAMOS con MAURO SZETA, CASO LIAM PAYNE y CHIQUI TAPIA REELECTO | DESAYUNO INTERMITENTE | BLENDER",
     "show": "DI",
@@ -1758,6 +2408,13 @@
     "duration": "PT2H48M35S"
   },
   {
+    "videoId": "qk0oqkMoM_A",
+    "title": "HAY ALGO AHÍ HALLOWEEN: SLASHERS, COSPLAYS TERRORÍFICOS ft GUILLE, JORGE, FIO, NOE CUSTODIO |BLENDER",
+    "show": "HAA",
+    "date": "2024-11-01T03:34:06Z",
+    "duration": "PT1H54M15S"
+  },
+  {
     "videoId": "7cdJq7k7d2Y",
     "title": "ESPECIAL HALLOWEEN ft. DINERO Y AMOR, HAY ALGO AHÍ y ESTO ES CINE | BLENDER",
     "show": "ESPECIAL",
@@ -1767,6 +2424,7 @@
   {
     "videoId": "5Bb3J5uR52s",
     "title": "ESTO ES CINE HALLOWEEN: VAMPIROS con GUILLE AQUINO y NAVAJA CRIMEN | BLENDER",
+    "show": "EEC",
     "date": "2024-11-01T04:24:46Z",
     "duration": "PT1H29M15S"
   },
@@ -1885,6 +2543,7 @@
   {
     "videoId": "C1KsGbEZtfs",
     "title": "ESTO ES CINE: JURASSIC PARK con GUILLE AQUINO y NAVAJA CRIMEN | BLENDER",
+    "show": "EEC",
     "date": "2024-11-09T02:00:06Z",
     "duration": "PT1H56M58S"
   },
@@ -2206,6 +2865,7 @@
   {
     "videoId": "La0tCalPQ00",
     "title": "ESTO ES CINE: ALIEN con GUILLE AQUINO, NAVAJA CRIMEN y JUANITA GROISMAN | ESTO ES CINE | BLENDER",
+    "show": "EEC",
     "date": "2024-11-30T02:03:23Z",
     "duration": "PT1H39M32S"
   },
@@ -4261,6 +4921,27 @@
     "duration": "PT1H45M42S"
   },
   {
+    "videoId": "RFXDAsfMMX0",
+    "title": "THE OFFICE: BLENDER | Hay Algo Ahí",
+    "show": "HAA",
+    "date": "2025-06-06T23:40:06Z",
+    "duration": "PT19M41S"
+  },
+  {
+    "videoId": "4gJtltll8qw",
+    "title": "PEÑA - REBORD | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2025-06-07T00:00:06Z",
+    "duration": "PT1H5M10S"
+  },
+  {
+    "videoId": "rBrWYAGVg-Q",
+    "title": "BABY - REBORD | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2025-06-09T00:00:05Z",
+    "duration": "PT1H32M39S"
+  },
+  {
     "videoId": "OQH2H-bjQno",
     "title": "LA DETENCIÓN DE GRABOIS, la CONDENA \"SORPRESA\" de CFK y MILEI de GIRA | DESAYUNO INTERMITENTE",
     "show": "DI",
@@ -4529,6 +5210,7 @@
   {
     "videoId": "LlpgzFrETEI",
     "title": "ESTO ES CINE: SANDRO | S03E01 | con @GuilleAquino y @NavajaCrimen",
+    "show": "EEC",
     "date": "2025-06-25T02:00:06Z",
     "duration": "PT1H24M53S"
   },
@@ -4668,6 +5350,7 @@
   {
     "videoId": "Q2of6JbpQA0",
     "title": "TRILOGÍA DEL APOCALIPSIS de CARPENTER | ESTO ES CINE S03E02 | con  @GuilleAquino  y  @NavajaCrimen ​",
+    "show": "EEC",
     "date": "2025-07-02T02:06:06Z",
     "duration": "PT1H28M40S"
   },
@@ -4807,6 +5490,7 @@
   {
     "videoId": "ozhhowlJzTM",
     "title": "JOHN WICK | ESTO ES CINE S03E03 | con @GuilleAquino y @NavajaCrimen",
+    "show": "EEC",
     "date": "2025-07-09T02:00:06Z",
     "duration": "PT1H52M20S"
   },
@@ -4918,6 +5602,7 @@
   {
     "videoId": "8iuRtWbJlPY",
     "title": "SPIDERMAN | ESTO ES CINE S03E04 | con @GuilleAquino y @NavajaCrimen",
+    "show": "EEC",
     "date": "2025-07-16T02:00:06Z",
     "duration": "PT1H34M47S"
   },
@@ -5050,6 +5735,7 @@
   {
     "videoId": "GiVbe6AHGi8",
     "title": "M. NIGHT SHYAMALAN | ESTO ES CINE S03E05 | con  @GuilleAquino   y @NavajaCrimen",
+    "show": "EEC",
     "date": "2025-07-23T02:00:06Z",
     "duration": "PT1H51M28S"
   },
@@ -5196,6 +5882,7 @@
   {
     "videoId": "0kmXK5RDpJ8",
     "title": "JOKER | ESTO ES CINE S03E06 | con @GuilleAquino y @NavajaCrimen",
+    "show": "EEC",
     "date": "2025-07-30T02:00:06Z",
     "duration": "PT1H11M39S"
   },
@@ -5335,6 +6022,7 @@
   {
     "videoId": "UBWZAYNm7FI",
     "title": "Evil Dead | ESTO ES CINE S03E07 | con @GuilleAquino y @NavajaCrimen",
+    "show": "EEC",
     "date": "2025-08-06T02:00:06Z",
     "duration": "PT1H9M12S"
   },
@@ -5418,6 +6106,7 @@
   {
     "videoId": "yyHope_QO-Y",
     "title": "REBORD - MILANI | HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
     "date": "2025-08-11T00:00:06Z",
     "duration": "PT2H14M23S"
   },
@@ -5473,6 +6162,7 @@
   {
     "videoId": "bmGPLGx_YqQ",
     "title": "Un Buen Día + The Room, y otras \"comedias involuntarias\" |  ESTO ES CINE S03E08",
+    "show": "EEC",
     "date": "2025-08-13T02:00:06Z",
     "duration": "PT1H15M35S"
   },
@@ -5598,6 +6288,7 @@
   {
     "videoId": "JazvlWvxZKo",
     "title": "Bruce Willis, el homenaje de @GuilleAquino y @NavajaCrimen | ESTO ES CINE S03E09",
+    "show": "EEC",
     "date": "2025-08-20T02:00:06Z",
     "duration": "PT1H31M31S"
   },
@@ -5677,5 +6368,12 @@
     "show": "EO",
     "date": "2025-08-22T15:52:00Z",
     "duration": "PT2H32M24S"
+  },
+  {
+    "videoId": "hcls83puhYQ",
+    "title": "CALIENTE DEBATE por CORRUPCIÓN en LIBERTAD AVANZA y CRISIS en DISCAPACIDAD | DOMINBORD #13 | BLENDER",
+    "show": "HAA",
+    "date": "2025-08-25T02:16:24Z",
+    "duration": "PT2H4M19S"
   }
 ]
