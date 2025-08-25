@@ -56,6 +56,7 @@ export default async function search(params: HagovSearchParams): Promise<SearchR
   let count = 0;
 
   const resultsPromises = videoList
+    .sort((videoA, videoB) => videoB.date.localeCompare(videoA.date))
     .filter((video) => video.show === show && !videosWithoutSubtitles.includes(video.videoId))
     .map(async (video) => {
       let matches: Subtitle[] | null = null;
@@ -84,8 +85,6 @@ export default async function search(params: HagovSearchParams): Promise<SearchR
     });
 
   await Promise.all(resultsPromises);
-
-  results.sort((videoA, videoB) => videoB.date.localeCompare(videoA.date));
 
   return { results, resultsCapped };
 }
