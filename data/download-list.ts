@@ -26,6 +26,9 @@ type PlaylistItem = {
 
 type VideoDetail = {
   contentDetails: { duration: string };
+  liveStreamingDetails?: {
+    actualStartTime?: string;
+  };
 };
 
 async function request(pageToken?: string): Promise<{ videos: Video[]; nextPageToken: string }> {
@@ -37,7 +40,7 @@ async function request(pageToken?: string): Promise<{ videos: Video[]; nextPageT
   const { items, nextPageToken } = await response.json();
 
   const ids = items.map((item: PlaylistItem) => item.snippet.resourceId.videoId).join(",");
-  const detailUrl = `https://www.googleapis.com/youtube/v3/videos?key=${youtubeApiKey}&id=${ids}&part=contentDetails`;
+  const detailUrl = `https://www.googleapis.com/youtube/v3/videos?key=${youtubeApiKey}&id=${ids}&part=contentDetails,liveStreamingDetails`;
   const detailResponse = await fetch(detailUrl);
   const detailJson: { items: VideoDetail[] } = await detailResponse.json();
 
@@ -47,7 +50,8 @@ async function request(pageToken?: string): Promise<{ videos: Video[]; nextPageT
     videos: items.map((item: PlaylistItem, index: number) => ({
       videoId: item.snippet.resourceId.videoId,
       title: item.snippet.title,
-      date: item.snippet.publishedAt,
+      date:
+        detailJson.items[index].liveStreamingDetails?.actualStartTime || item.snippet.publishedAt,
       duration: detailJson.items[index].contentDetails.duration,
     })),
   };
@@ -96,6 +100,8 @@ function mergeVideos(allVideos: AllVideos, newVideos: Video[]) {
         ...allVideos.ignored[video.videoId],
         ...video,
       };
+    } else if (/pt\d+s/i.test(video.duration)) {
+      allVideos.ignored[video.videoId] = video;
     } else {
       allVideos.pending[video.videoId] = video;
     }
