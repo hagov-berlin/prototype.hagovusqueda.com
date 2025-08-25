@@ -85,5 +85,7 @@ export default async function search(params: HagovSearchParams): Promise<SearchR
 
   await Promise.all(resultsPromises);
 
+  results.sort((videoA, videoB) => videoB.date.localeCompare(videoA.date));
+
   return { results, resultsCapped };
 }
