@@ -14,6 +14,7 @@ export type Video = {
   title: string;
   date: string;
   show: Show;
+  duration: string;
   thumbnail: {
     url: string;
     width: number;
