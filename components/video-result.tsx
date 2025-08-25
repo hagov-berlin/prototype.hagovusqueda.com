@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Result } from "@/data/types";
 import styles from "./video-result.module.css";
 import { SubtitleResult } from "./subtitle-result";
@@ -14,9 +15,18 @@ export default function VideoResult(props: ResultProps) {
   const { result } = props;
   return (
     <div className={styles.videoResult}>
-      <div>
-        <h3 className={styles.videoResultTitle}>{result.title || "Missing title"}</h3>{" "}
-        <span>{result.date ? parseDate(result.date) : "Missing date"}</span>
+      <div className={styles.videoResultHeader}>
+        <div className={styles.videoResultTitleContainer}>
+          <div>
+            <h3 className={styles.videoResultTitle}>{result.title || "Missing title"}</h3>{" "}
+            <span>{result.date ? parseDate(result.date) : "Missing date"}</span>
+          </div>
+        </div>
+        <img
+          className={styles.videoThumbnail}
+          src={`https://i.ytimg.com/vi/${result.videoId}/mqdefault.jpg`}
+          alt={result.title}
+        />
       </div>
       {result.subtitles.map((subtitle, index) => (
         <SubtitleResult key={index} videoId={result.videoId} subtitle={subtitle} />

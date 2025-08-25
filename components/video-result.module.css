@@ -8,12 +8,31 @@
   }
 }
 
+.videoResultHeader {
+  display: flex;
+  gap: 12px;
+
+  @media (max-width: 628px) {
+    flex-direction: column;
+  }
+}
+
+.videoResultTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .videoResultTitle {
   display: inline;
+}
 
-  &:before {
-    content: "✹";
-    margin-right: 0.5em;
-    color: #a51681;
+.videoThumbnail {
+  width: auto;
+  height: 140px;
+
+  @media (max-width: 628px) {
+    width: 100%;
+    height: auto;
   }
 }
