@@ -4693,7 +4693,7 @@
   },
   {
     "videoId": "I2nzPHguOf8",
-    "title": "SEÑOR ESCRACHE! | GUILLE AQUINO El Sketch | BLENDER",
+    "title": "SEÑOR ESCRACHE | #ElSketch de @GuilleAquino",
     "date": "2024-02-18T15:00:19Z",
     "duration": "PT3M12S"
   },
@@ -11818,6 +11818,13 @@
     "title": "EL MIEDO DE LOS PADRES #LasPibasDicen",
     "date": "2024-12-26T19:03:16Z",
     "duration": "PT25S"
+  },
+  {
+    "videoId": "4aTbg7IBv4o",
+    "title": "LOS MEJORES INVITADOS y  VIERNES de HAY ALGO AHÍ | BLENDER",
+    "show": "HAA",
+    "date": "2024-12-27T20:47:37Z",
+    "duration": "PT8H54M55S"
   },
   {
     "videoId": "SFdEoyNMli8",
@@ -21306,11 +21313,6 @@
     "duration": "PT54S"
   },
   {
-    "videoId": "qOLzJcZxdVI",
-    "title": "Las RECETAS de PASTAS de Ximena Sáenz | COCINAME LA DOBLE | Juana Groisman y Juan Ruffo | BLENDER",
-    "date": "2025-08-25T22:29:33Z"
-  },
-  {
     "videoId": "v2pr6UJYbXU",
     "title": "Larry de Clay, el primer Riquelmista #blender #hayalgoahi #dominbord",
     "date": "2025-08-25T22:55:36Z",
@@ -21351,5 +21353,41 @@
     "title": "ESCÁNDALO de CORRUPCIÓN en el GOBIERNO de la LIBERTAD AVANZA | EDIBORDIAL | BLENDER",
     "date": "2025-08-26T02:08:12Z",
     "duration": "PT26M"
+  },
+  {
+    "videoId": "D-0Pye3PqOQ",
+    "title": "Dios le regaló el gol a Cavani #hayalgoahi #blender #boca",
+    "date": "2025-08-26T13:41:34Z",
+    "duration": "PT42S"
+  },
+  {
+    "videoId": "zvOlUx0k_3U",
+    "title": "Alonso y Mazza, la inclusión de verdad #hayalgoahi #blender",
+    "date": "2025-08-26T14:34:10Z",
+    "duration": "PT50S"
+  },
+  {
+    "videoId": "qOLzJcZxdVI",
+    "title": "Las RECETAS de PASTAS de Ximena Sáenz | COCINAME LA DOBLE | Juana Groisman y Juan Ruffo | BLENDER",
+    "date": "2025-08-26T15:30:06Z",
+    "duration": "PT29M18S"
+  },
+  {
+    "videoId": "rHLcKOho3u0",
+    "title": "El golpe más bajo del Gobierno #hayalgoahi #blender",
+    "date": "2025-08-26T16:19:37Z",
+    "duration": "PT47S"
+  },
+  {
+    "videoId": "q46ICH-ztoQ",
+    "title": "Rebord se puso kuka #hayalgoahi #blender",
+    "date": "2025-08-26T16:21:42Z",
+    "duration": "PT35S"
+  },
+  {
+    "videoId": "14ZjeWvxfRE",
+    "title": "Los Menem deshonran el apellido #hayalgoahi #blender",
+    "date": "2025-08-26T16:49:35Z",
+    "duration": "PT52S"
   }
 ]

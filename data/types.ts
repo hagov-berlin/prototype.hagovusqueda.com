@@ -1,7 +1,7 @@
 export type Subtitle = [string, number, number];
 export type VideoId = string;
 
-const shows = ["EO", "DI", "HYF", "HAA", "ESPECIAL", "CS", "SCDY", "EEC", "BG"] as const;
+const shows = ["EO", "DI", "HYF", "HAA", "ESPECIAL", "CS", "SCDY", "EEC", "BG", "MAGA"] as const;
 
 export type Show = (typeof shows)[number];
 

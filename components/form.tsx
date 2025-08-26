@@ -130,6 +130,11 @@ export default function Form(props: FormProps) {
           <option value="HYF" selected={show === "HYF"}>
             Horrible y Fascinante
           </option>
+          {show === "MAGA" ? (
+            <option value="MAGA" selected={show === "MAGA"}>
+              M.A.G.A.
+            </option>
+          ) : null}
           <option value="SCDY" selected={show === "SCDY"}>
             San Clemente del Youtube
           </option>

@@ -9,7 +9,8 @@ import { Video, VideoId } from "./types";
 
 const youtubeApiKey = process.env.YOUTUBE_API_KEY;
 const channelId = "UC6pJGaMdx5Ter_8zYbLoRgA"; // Blender Channel ID
-const allUploadsPlaylist = channelId.replace(/^UC/, "UU");
+const blenderPlaylist = channelId.replace(/^UC/, "UU");
+const magaPlaylist = "PLSaospqN2Pt95vDDK3S2DflxXbkcC4EcI";
 const listOutputPath = path.join(__dirname, "videos", "list.json");
 const ignoredOutputPath = path.join(__dirname, "videos", "ignored.json");
 const pendingOutputPath = path.join(__dirname, "videos", "pending.json");
@@ -31,8 +32,11 @@ type VideoDetail = {
   };
 };
 
-async function request(pageToken?: string): Promise<{ videos: Video[]; nextPageToken: string }> {
-  let url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=${allUploadsPlaylist}&key=${youtubeApiKey}`;
+async function request(
+  playlist: string,
+  pageToken?: string
+): Promise<{ videos: Video[]; nextPageToken: string }> {
+  let url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=${playlist}&key=${youtubeApiKey}`;
   if (pageToken) {
     url = `${url}&pageToken=${pageToken}`;
   }
@@ -108,20 +112,25 @@ function mergeVideos(allVideos: AllVideos, newVideos: Video[]) {
   });
 }
 
-(async function () {
-  const allVideos = loadExistingVideos();
+async function processPlaylist(playlistId: string, allVideos: AllVideos) {
   let count = 1;
-  console.log(`Requesting initial page ${count}`);
-  const { videos: newVideos, nextPageToken } = await request();
+  console.log(`Requesting initial page ${count} for playlist ${playlistId}`);
+  const { videos: newVideos, nextPageToken } = await request(playlistId);
   mergeVideos(allVideos, newVideos);
   let pageToken = nextPageToken;
   while (pageToken) {
     count += 1;
     console.log(`Requesting initial page ${count} ${pageToken}`);
-    const { videos: newVideos, nextPageToken } = await request(pageToken);
+    const { videos: newVideos, nextPageToken } = await request(playlistId, pageToken);
     mergeVideos(allVideos, newVideos);
     pageToken = nextPageToken;
   }
+}
+
+(async function () {
+  const allVideos = loadExistingVideos();
+  await processPlaylist(blenderPlaylist, allVideos);
+  await processPlaylist(magaPlaylist, allVideos);
   saveVideos(listOutputPath, Object.values(allVideos.list));
   saveVideos(ignoredOutputPath, Object.values(allVideos.ignored));
   saveVideos(pendingOutputPath, Object.values(allVideos.pending));
