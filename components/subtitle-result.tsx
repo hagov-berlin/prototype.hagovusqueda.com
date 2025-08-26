@@ -28,7 +28,8 @@ function YoutubeIframe(props: YoutubeIframeProps) {
       className={styles.resultIframe}
       width="640"
       height="360"
-      src={`https://www.youtube.com/embed/${props.videoId}?start=${props.start}&autoplay=1`}
+      allow="autoplay"
+      src={`https://www.youtube.com/embed/${props.videoId}?start=${props.start}&autoplay=1&`}
       frameBorder="0"
     ></iframe>
   );
