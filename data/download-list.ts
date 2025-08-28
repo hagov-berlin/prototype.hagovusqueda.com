@@ -5,7 +5,8 @@ dotenv.config({ path: path.join(__dirname, "../.env") });
 
 import fs from "fs";
 import stringify from "json-stringify-pretty-compact";
-import { AVAILABLE_SHOWS, isShow, Video, VideoId } from "./types";
+import { isShow, Video, VideoId } from "./types";
+import { AVAILABLE_SHOWS } from "./shows";
 
 const youtubeApiKey = process.env.YOUTUBE_API_KEY;
 const channelId = "UC6pJGaMdx5Ter_8zYbLoRgA"; // Blender Channel ID

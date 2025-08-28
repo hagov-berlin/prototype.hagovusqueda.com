@@ -55,7 +55,7 @@ export function SubtitleResult(props: SubtitleProps) {
         </div>
         {expanded ? null : <Button>VER</Button>}
       </div>
-      {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle[1] - 5} />}
+      {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle[1] - 2} />}
     </div>
   );
 }

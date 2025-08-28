@@ -105,13 +105,13 @@ export default function Form(props: FormProps) {
       </div>
       <div className={`${styles.advancedOptions} ${styles.advancedOptionsVisible}`}>
         <label>Buscar en</label>
-        <select ref={showSelectRef} disabled={props.loading}>
+        <select ref={showSelectRef} disabled={props.loading} defaultValue={show}>
           {Object.entries(AVAILABLE_SHOWS)
             .sort()
             .map(([showKey, showName]) => {
               if (showKey === "MAGA" && show !== "MAGA") return null;
               return (
-                <option key={showKey} value={showKey} selected={show === showKey}>
+                <option key={showKey} value={showKey}>
                   {showName}
                 </option>
               );
