@@ -1,10 +1,12 @@
 # [HAGOVusqueda.com](https://hagovusqueda.com/)
 
+![alt text](public/logo.png)
+
 ## Local development
 
 For local development, install dependencies via `npm install` and run `npm run dev` to start the local development server
 
-## Data update
+## Data update
 
 The data pipeline requires
 
