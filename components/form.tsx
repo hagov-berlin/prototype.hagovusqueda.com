@@ -103,7 +103,9 @@ export default function Form(props: FormProps) {
           Buscar palabras completas
         </label>
       </div>
-      <div className={`${styles.advancedOptions} ${styles.advancedOptionsVisible}`}>
+      <div
+        className={`${styles.advancedOptions} ${styles.advancedOptionsVisible} ${styles.showSelect}`}
+      >
         <label>Buscar en</label>
         <select ref={showSelectRef} disabled={props.loading} defaultValue={show}>
           {Object.entries(AVAILABLE_SHOWS)

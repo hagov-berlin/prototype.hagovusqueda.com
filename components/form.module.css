@@ -117,3 +117,10 @@
 .advancedOptions select:hover {
   border-color: #b6138d;
 }
+
+.showSelect label {
+  font-size: 18px;
+}
+.showSelect select {
+  font-size: 1em;
+}
