@@ -167,7 +167,7 @@ function validateData(allVideos: AllVideos) {
   }
   for (const day in videosByDate) {
     const videos = videosByDate[day];
-    AVAILABLE_SHOWS.forEach((show) => {
+    Object.keys(AVAILABLE_SHOWS).forEach((show) => {
       const dateVideos = videos.filter((video) => video.show === show);
       if (dateVideos.length > 1) {
         console.warn(`Multiple ${show} on date ${day}`, dateVideos);

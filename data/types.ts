@@ -1,23 +1,12 @@
+import { AVAILABLE_SHOWS } from "./shows";
+
 export type Subtitle = [string, number, number];
 export type VideoId = string;
 
-export const AVAILABLE_SHOWS = [
-  "EO",
-  "DI",
-  "HYF",
-  "HAA",
-  "ESPECIAL",
-  "CS",
-  "SCDY",
-  "EEC",
-  "BG",
-  "MAGA",
-] as const;
-
-export type Show = (typeof AVAILABLE_SHOWS)[number];
+export type Show = keyof typeof AVAILABLE_SHOWS;
 
 export function isShow(showString: string): showString is Show {
-  return !!AVAILABLE_SHOWS.find((show) => show === showString);
+  return !!Object.keys(AVAILABLE_SHOWS).find((show) => show === showString);
 }
 
 export type Video = {

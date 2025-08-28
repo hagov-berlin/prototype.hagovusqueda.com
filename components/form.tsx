@@ -5,6 +5,7 @@ import { defaultParams, urlWithQueryParams } from "./utils";
 import Button from "./button";
 import { useHagovSearchParams } from "./hooks";
 import { Show } from "@/data/types";
+import { AVAILABLE_SHOWS } from "@/data/shows";
 
 type FormProps = {
   loading: boolean;
@@ -13,8 +14,7 @@ type FormProps = {
 export default function Form(props: FormProps) {
   const { searchTerm, show, ignoreAccents, matchWholeWords } = useHagovSearchParams();
   const [showAdvancedOptions, setShowAdvancedOptions] = useState(
-    show !== defaultParams.show ||
-      ignoreAccents !== defaultParams.ignoreAccents ||
+    ignoreAccents !== defaultParams.ignoreAccents ||
       matchWholeWords !== defaultParams.matchWholeWords
   );
   const router = useRouter();
@@ -47,7 +47,7 @@ export default function Form(props: FormProps) {
     router.push(newUrl, { scroll: false });
   };
 
-  const advancedOptionsClassName = `${styles.advancedOptions} ${
+  const optionalAdvancedOptionsClassName = `${styles.advancedOptions} ${
     showAdvancedOptions ? styles.advancedOptionsVisible : ""
   }`;
 
@@ -81,7 +81,7 @@ export default function Form(props: FormProps) {
           </button>
         </div>
       </div>
-      <div className={advancedOptionsClassName}>
+      <div className={optionalAdvancedOptionsClassName}>
         <label>
           <input
             type="checkbox"
@@ -92,7 +92,7 @@ export default function Form(props: FormProps) {
           Ignorar acentos
         </label>
       </div>
-      <div className={advancedOptionsClassName}>
+      <div className={optionalAdvancedOptionsClassName}>
         <label>
           <input
             type="checkbox"
@@ -103,41 +103,19 @@ export default function Form(props: FormProps) {
           Buscar palabras completas
         </label>
       </div>
-      <div className={advancedOptionsClassName}>
+      <div className={`${styles.advancedOptions} ${styles.advancedOptionsVisible}`}>
         <label>Buscar en</label>
         <select ref={showSelectRef} disabled={props.loading}>
-          <option value="BG" selected={show === "BG"}>
-            Balas Gratis
-          </option>
-          <option value="CS" selected={show === "CS"}>
-            Costa Stream
-          </option>
-          <option value="EO" selected={show === "EO"}>
-            Escucho Ofertas
-          </option>
-          <option value="ESPECIAL" selected={show === "ESPECIAL"}>
-            Especiales Blender
-          </option>
-          <option value="EEC" selected={show === "EEC"}>
-            Esto Es Cine
-          </option>
-          <option value="DI" selected={show === "DI"}>
-            Desayuno Intermitente
-          </option>
-          <option value="HAA" selected={show === "HAA"}>
-            Hay Algo Ahi
-          </option>
-          <option value="HYF" selected={show === "HYF"}>
-            Horrible y Fascinante
-          </option>
-          {show === "MAGA" ? (
-            <option value="MAGA" selected={show === "MAGA"}>
-              M.A.G.A.
-            </option>
-          ) : null}
-          <option value="SCDY" selected={show === "SCDY"}>
-            San Clemente del Youtube
-          </option>
+          {Object.entries(AVAILABLE_SHOWS)
+            .sort()
+            .map(([showKey, showName]) => {
+              if (showKey === "MAGA" && show !== "MAGA") return null;
+              return (
+                <option key={showKey} value={showKey} selected={show === showKey}>
+                  {showName}
+                </option>
+              );
+            })}
         </select>
       </div>
     </form>

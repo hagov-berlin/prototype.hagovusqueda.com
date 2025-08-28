@@ -2,6 +2,7 @@ import { Result, Show } from "@/data/types";
 import VideoResult from "./video-result";
 import styles from "./results-container.module.css";
 import { useHagovSearchParams } from "./hooks";
+import { AVAILABLE_SHOWS } from "@/data/shows";
 
 function countSubtitles(results: Result[]) {
   const count = results.reduce((accum, result) => accum + result.subtitles.length, 0);
@@ -22,22 +23,27 @@ function getTitle(
   if (loading) {
     return "Buscando...";
   }
+  const showName = AVAILABLE_SHOWS[show];
   const quotedSearchTerm = <span>“{searchTerm}”</span>;
   if (results.length === 0) {
-    return <>No hay resultados para {quotedSearchTerm}</>;
+    return (
+      <>
+        No hay resultados para {quotedSearchTerm} en {showName}
+      </>
+    );
   }
   const subtitlesCount = countSubtitles(results);
   const videosCount = countResults(results);
   if (resultsCapped) {
     return (
       <>
-        Mas de {subtitlesCount} en {videosCount} para {quotedSearchTerm} en {show}
+        Mas de {subtitlesCount} en {videosCount} para {quotedSearchTerm} en {showName}
       </>
     );
   }
   return (
     <>
-      {subtitlesCount} en {videosCount} para {quotedSearchTerm} en {show}
+      {subtitlesCount} en {videosCount} para {quotedSearchTerm} en {showName}
     </>
   );
 }
