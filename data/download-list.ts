@@ -5,7 +5,7 @@ dotenv.config({ path: path.join(__dirname, "../.env") });
 
 import fs from "fs";
 import stringify from "json-stringify-pretty-compact";
-import { Video, VideoId } from "./types";
+import { AVAILABLE_SHOWS, isShow, Video, VideoId } from "./types";
 
 const youtubeApiKey = process.env.YOUTUBE_API_KEY;
 const channelId = "UC6pJGaMdx5Ter_8zYbLoRgA"; // Blender Channel ID
@@ -127,10 +127,60 @@ async function processPlaylist(playlistId: string, allVideos: AllVideos) {
   }
 }
 
+function isIsoDate(str: string) {
+  if (!/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z/.test(str)) return false;
+  const d = new Date(str);
+  return !isNaN(d.getTime()) && d.toISOString().replace(".000Z", "Z") === str;
+}
+
+function isValidDuration(str: string) {
+  return /^PT(\d\d?H)?(\d\d?M)?(\d\d?S)?$/.test(str) && str.length > 2;
+}
+
+function validateData(allVideos: AllVideos) {
+  const videosByDate: Record<string, Video[]> = {};
+  for (const videoId in allVideos.list) {
+    const video = allVideos.list[videoId];
+    if (!video.videoId || video.videoId.length !== 11) {
+      console.warn(`Invalid id for ${videoId}`);
+    }
+    if (!video.title) {
+      console.warn(`Missing title for ${videoId}`);
+    }
+    if (!isIsoDate(video.date)) {
+      console.warn(`Invalid date ${video.date} for ${videoId}`);
+    }
+    if (!isValidDuration(video.duration)) {
+      console.warn(`Invalid duration ${video.duration} for ${videoId}`);
+    }
+    if (!isShow(video.show)) {
+      console.warn(`Invalid show ${video.show} for ${videoId}`);
+    }
+    const day = new Date(video.date).toLocaleDateString("es-ar", {
+      timeZone: "America/Argentina/Buenos_Aires",
+    });
+    if (videosByDate[day]) {
+      videosByDate[day].push(video);
+    } else {
+      videosByDate[day] = [video];
+    }
+  }
+  for (const day in videosByDate) {
+    const videos = videosByDate[day];
+    AVAILABLE_SHOWS.forEach((show) => {
+      const dateVideos = videos.filter((video) => video.show === show);
+      if (dateVideos.length > 1) {
+        console.warn(`Multiple ${show} on date ${day}`, dateVideos);
+      }
+    });
+  }
+}
+
 (async function () {
   const allVideos = loadExistingVideos();
   await processPlaylist(blenderPlaylist, allVideos);
   await processPlaylist(magaPlaylist, allVideos);
+  validateData(allVideos);
   saveVideos(listOutputPath, Object.values(allVideos.list));
   saveVideos(ignoredOutputPath, Object.values(allVideos.ignored));
   saveVideos(pendingOutputPath, Object.values(allVideos.pending));

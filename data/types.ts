@@ -1,12 +1,23 @@
 export type Subtitle = [string, number, number];
 export type VideoId = string;
 
-const shows = ["EO", "DI", "HYF", "HAA", "ESPECIAL", "CS", "SCDY", "EEC", "BG", "MAGA"] as const;
+export const AVAILABLE_SHOWS = [
+  "EO",
+  "DI",
+  "HYF",
+  "HAA",
+  "ESPECIAL",
+  "CS",
+  "SCDY",
+  "EEC",
+  "BG",
+  "MAGA",
+] as const;
 
-export type Show = (typeof shows)[number];
+export type Show = (typeof AVAILABLE_SHOWS)[number];
 
 export function isShow(showString: string): showString is Show {
-  return !!shows.find((show) => show === showString);
+  return !!AVAILABLE_SHOWS.find((show) => show === showString);
 }
 
 export type Video = {
