@@ -107,11 +107,16 @@
   background: none;
   border: solid 2px #c518de;
   border-radius: 4px;
-  color: currentColor;
   padding: 4px 8px;
   font-weight: 500;
   position: relative;
   cursor: pointer;
+}
+
+.advancedOptions select,
+.advancedOptions option {
+  color: currentColor;
+  background: #222;
 }
 
 .advancedOptions select:hover {
