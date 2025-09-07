@@ -27,6 +27,19 @@
   text-align: center;
   font-family: var(--font-germania-one);
   text-shadow: 3px 3px #c518de;
+  position: relative;
+}
+
+.betaLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, 25%) rotate(25deg);
+  background: #c518de;
+  color: white;
+  font-size: 0.4em;
+  padding: 0.1em 0.2em;
+  border-radius: 4px;
 }
 
 .main,
