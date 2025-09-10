@@ -29,13 +29,15 @@ export function useSearch() {
       const params = new URLSearchParams();
       params.set("q", searchTerm);
       params.set("show", show);
-      fetch(`http://localhost:8080/search?${params.toString()}`).then(async (response) => {
-        const searchResults = await response.json();
-        console.log(searchResults);
-        setResults(searchResults.results);
-        setResultsCapped(searchResults.resultsCapped);
-        setLoading(false);
-      });
+      fetch(`${process.env.NEXT_PUBLIC_BASE_API_PATH}/search?${params.toString()}`).then(
+        async (response) => {
+          const searchResults = await response.json();
+          console.log(searchResults);
+          setResults(searchResults.results);
+          setResultsCapped(searchResults.resultsCapped);
+          setLoading(false);
+        }
+      );
     }
   }, [searchTerm, show]);
 
