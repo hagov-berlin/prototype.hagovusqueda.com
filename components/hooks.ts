@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { HagovSearchParams, isShow, Result } from "@/data/types";
 import { useSearchParams } from "next/navigation";
 import { defaultParams } from "./utils";
-import search from "@/data/search";
 
 function parseBoolean(booleanString: string, defaultValue: boolean): boolean {
   if (["true", "false"].includes(booleanString)) {
@@ -39,7 +38,14 @@ export function useSearch() {
       setResults([]);
       setResultsCapped(false);
       setLoading(true);
-      search({ searchTerm, show, matchWholeWords, ignoreAccents }).then((searchResults) => {
+      const params = new URLSearchParams();
+      params.set("q", searchTerm);
+      params.set("show", show);
+      params.set("matchWholeWords", matchWholeWords.toString());
+      params.set("ignoreAccents", ignoreAccents.toString());
+      fetch(`http://localhost:8080/search?${params.toString()}`).then(async (response) => {
+        const searchResults = await response.json();
+        console.log(searchResults);
         setResults(searchResults.results);
         setResultsCapped(searchResults.resultsCapped);
         setLoading(false);

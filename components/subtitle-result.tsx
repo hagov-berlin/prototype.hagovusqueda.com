@@ -50,12 +50,12 @@ export function SubtitleResult(props: SubtitleProps) {
     >
       <div className={styles.subtitleMatchHeaderContainer}>
         <div className={styles.subtitleMatchHeader}>
-          <span className={styles.subtitleTime}>{secondsToTime(props.subtitle[1])}</span>
-          <span className={styles.subtitleText}>{props.subtitle[0]}</span>
+          <span className={styles.subtitleTime}>{secondsToTime(props.subtitle.startTime)}</span>
+          <span className={styles.subtitleText}>{props.subtitle.text}</span>
         </div>
         {expanded ? null : <Button>VER</Button>}
       </div>
-      {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle[1] - 2} />}
+      {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle.startTime - 2} />}
     </div>
   );
 }

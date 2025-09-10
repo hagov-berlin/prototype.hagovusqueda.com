@@ -24,12 +24,12 @@ export default function VideoResult(props: ResultProps) {
         </div>
         <img
           className={styles.videoThumbnail}
-          src={`https://i.ytimg.com/vi/${result.videoId}/mqdefault.jpg`}
+          src={`https://i.ytimg.com/vi/${result.id}/mqdefault.jpg`}
           alt={result.title}
         />
       </div>
       {result.subtitles.map((subtitle, index) => (
-        <SubtitleResult key={index} videoId={result.videoId} subtitle={subtitle} />
+        <SubtitleResult key={index} videoId={result.id} subtitle={subtitle} />
       ))}
     </div>
   );

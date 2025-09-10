@@ -67,7 +67,7 @@ export default function ResultsContainer(props: ResultsContainerProps) {
     <div className={styles.results}>
       <h2 className={styles.title}>{title}</h2>
       {results?.map((result) => (
-        <VideoResult key={result.videoId} result={result} />
+        <VideoResult key={result.id} result={result} />
       ))}
     </div>
   );

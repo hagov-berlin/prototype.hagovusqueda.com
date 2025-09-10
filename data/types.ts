@@ -1,6 +1,10 @@
 import { AVAILABLE_SHOWS } from "./shows";
 
-export type Subtitle = [string, number, number];
+export type Subtitle = {
+  startTime: number;
+  endTime: number;
+  text: string;
+};
 export type VideoId = string;
 
 export type Show = keyof typeof AVAILABLE_SHOWS;
@@ -10,20 +14,13 @@ export function isShow(showString: string): showString is Show {
 }
 
 export type Video = {
-  videoId: VideoId;
+  id: VideoId;
   title: string;
   date: string;
   show: Show;
-  duration: string;
-  thumbnail: {
-    url: string;
-    width: number;
-    height: number;
-  };
+  duration: number;
 };
 
-// Diff is only conceptual.
-// Result is used in the client and doesn't have the full list of subtitles (only the matched subtitles)
 export type Result = Video & {
   subtitles: Subtitle[];
 };
