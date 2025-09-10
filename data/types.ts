@@ -28,8 +28,6 @@ export type Result = Video & {
 export type HagovSearchParams = {
   searchTerm: string;
   show: Show;
-  matchWholeWords: boolean;
-  ignoreAccents: boolean;
   dateFrom?: string;
   dateUntil?: string;
 };

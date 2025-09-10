@@ -51,25 +51,9 @@
   }
 }
 
-.advancedOptionsToggleContainer {
-  text-align: right;
-}
-
-.advancedOptionsButton {
-  appearance: none;
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: currentColor;
-}
-
 .advancedOptions {
-  display: none;
-  gap: 16px;
-}
-
-.advancedOptionsVisible {
   display: flex;
+  gap: 16px;
 }
 
 .advancedOptions label {
@@ -77,29 +61,6 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
-}
-
-.advancedOptions input {
-  appearance: none;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  border: solid 2px;
-}
-
-.advancedOptions input:focus-visible {
-  outline: solid 2px #c518de;
-  outline-offset: 2px;
-}
-
-.advancedOptions input:checked {
-  border-color: #c518de;
-  background: radial-gradient(#c518de 0%, #c518de 50%, transparent 51%);
-}
-
-.advancedOptions label:hover input {
-  border-color: #b6138d;
 }
 
 .advancedOptions select {
