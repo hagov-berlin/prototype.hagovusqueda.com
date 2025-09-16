@@ -15,7 +15,7 @@ function Page() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>HAGOVusqueda</h1>
+        <div className={styles.logo} />
         <Form loading={loading} />
       </header>
       <main className={styles.main}>

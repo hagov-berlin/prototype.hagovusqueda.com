@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
   padding: 64px;
 
   @media (max-width: 628px) {
@@ -22,12 +21,13 @@
   }
 }
 
-.title {
-  font-size: calc(min(64px, 14vw));
-  text-align: center;
-  font-family: var(--font-germania-one);
-  text-shadow: 3px 3px #c518de;
-  position: relative;
+.logo {
+  aspect-ratio: 3;
+  background-image: url("/logo.png");
+  width: 100%;
+  max-width: 400px;
+  background-size: 130%;
+  background-position: center;
 }
 
 .main,
