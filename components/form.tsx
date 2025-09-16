@@ -56,7 +56,6 @@ export default function Form(props: FormProps) {
           {Object.entries(AVAILABLE_SHOWS)
             .sort()
             .map(([showKey, showName]) => {
-              if (showKey === "MAGA" && show !== "MAGA") return null;
               return (
                 <option key={showKey} value={showKey}>
                   {showName}

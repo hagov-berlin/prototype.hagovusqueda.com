@@ -3,8 +3,8 @@ import { Subtitle } from "@/data/types";
 import styles from "./subtitle-result.module.css";
 import Button from "./button";
 
-function secondsToTime(secondsNumber: number) {
-  const cleanedSeconds = Math.max(0, secondsNumber);
+function secondsToTime(milisecondsNumber: number) {
+  const cleanedSeconds = Math.max(0, milisecondsNumber / 1000);
   const hoursString = Math.floor(cleanedSeconds / 60 / 60)
     .toString()
     .padStart(2, "0");
@@ -43,6 +43,7 @@ type SubtitleProps = {
 export function SubtitleResult(props: SubtitleProps) {
   const [expanded, setExpanded] = useState(false);
 
+  const startSeconds = Math.round(props.subtitle.startTimeMs / 1000) - 2;
   return (
     <div
       className={`${styles.subtitleMatch} ${expanded ? styles.subtitleMatchExpanded : ""}`}
@@ -50,12 +51,12 @@ export function SubtitleResult(props: SubtitleProps) {
     >
       <div className={styles.subtitleMatchHeaderContainer}>
         <div className={styles.subtitleMatchHeader}>
-          <span className={styles.subtitleTime}>{secondsToTime(props.subtitle.startTime)}</span>
+          <span className={styles.subtitleTime}>{secondsToTime(props.subtitle.startTimeMs)}</span>
           <span className={styles.subtitleText}>{props.subtitle.text}</span>
         </div>
         {expanded ? null : <Button>VER</Button>}
       </div>
-      {expanded && <YoutubeIframe videoId={props.videoId} start={props.subtitle.startTime - 2} />}
+      {expanded && <YoutubeIframe videoId={props.videoId} start={startSeconds} />}
     </div>
   );
 }

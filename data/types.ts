@@ -1,8 +1,8 @@
 import { AVAILABLE_SHOWS } from "./shows";
 
 export type Subtitle = {
-  startTime: number;
-  endTime: number;
+  startTimeMs: number;
+  endTimeMs: number;
   text: string;
 };
 export type VideoId = string;
@@ -14,11 +14,11 @@ export function isShow(showString: string): showString is Show {
 }
 
 export type Video = {
-  id: VideoId;
+  youtubeId: VideoId;
   title: string;
   date: string;
   show: Show;
-  duration: number;
+  durationSec: number;
 };
 
 export type Result = Video & {

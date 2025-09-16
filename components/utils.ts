@@ -1,7 +1,7 @@
 import { HagovSearchParams } from "@/data/types";
 
 export const defaultParams: Omit<HagovSearchParams, "searchTerm"> = {
-  show: "HAA",
+  show: "hay-algo-ahi",
 };
 
 export function urlWithQueryParams(newParams: HagovSearchParams) {
