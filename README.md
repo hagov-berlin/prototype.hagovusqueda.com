@@ -1,3 +1,8 @@
+# ⚠️ Deprecated
+
+New repo => https://github.com/hagov-berlin/hagovusqueda.com
+
+
 # [HAGOVusqueda.com](https://hagovusqueda.com/)
 
 ![alt text](public/logo.png)
